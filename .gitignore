@@ -51,9 +51,8 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variables file
-.env
-.env.build
+# dotenv environment variable files
+.env*
 
 # gatsby files
 .cache/
@@ -69,4 +68,7 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+.now
+# Local Netlify folder
+.netlify
 .vercel

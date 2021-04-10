@@ -1,56 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
-import '../styles/index.css';
+import React from 'react';
+import SEO from 'components/seo';
+import Layout from 'components/layout';
+import Banner from 'sections/banner';
+import Clients from 'sections/clients';
+import Land from 'sections/land';
+import OurCustomer from 'sections/our-customer';
+import Gallery from 'sections/gallery';
+import Pricing from 'sections/pricing';
+import Blog from 'sections/blog';
+import Subscription from 'sections/subscription';
 
-function Index() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.text();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
+export default function IndexPage() {
   return (
-    <main>
-      <Helmet>
-        <title>Gatsby + Node.js (TypeScript) API</title>
-      </Helmet>
-      <h1>Gatsby + Node.js (TypeScript) API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/vercel/vercel/tree/master/examples/gatsby"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        is a <a href="https://www.gatsbyjs.org/">Gatsby</a> app with two
-        directories, <code>/src</code> for static content and <code>/api</code>{' '}
-        which contains a serverless{' '}
-        <a href="https://nodejs.org/en/">Node.js (TypeScript)</a> function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Node.js (TypeScript)
-        </a>
-        .
-      </p>
-      <br />
-      <h2>The date according to Node.js (TypeScript) is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
-    </main>
+    <Layout>
+      <SEO title='Startup Landing 007' />
+      <Banner />
+      {/* <Clients /> */}
+      <Land />
+      <Gallery />
+      {/* <Pricing /> */}
+      {/* <OurCustomer /> */}
+      {/* <Blog /> */}
+      {/* <Subscription /> */}
+    </Layout>
   );
 }
-
-export default Index;
