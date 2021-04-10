@@ -29,14 +29,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `DM Sans`,
-            variants: [`400`, `500`, `700`],
-          },
-        ],
+        fonts: [`DM Sans`],
+        display: 'swap',
       },
     },
     {
