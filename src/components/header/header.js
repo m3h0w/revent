@@ -8,6 +8,7 @@ import { NavLink } from 'components/link';
 import menuItems from './header.data';
 import theme from 'gatsby-plugin-theme-ui';
 import { ScrollRotate } from 'react-scroll-rotate';
+import IWantToHelpButton from 'components/IWantToHelp';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -53,9 +54,7 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
-                <Button sx={styles.joinNow} variant='primaryMd'>
-                  I want to help!
-                </Button>
+                {/* <IWantToHelpButton stylesOverwrite={styles.hiddenOnMobile} /> */}
               </Flex>
               {mobileMenu ? (
                 <Button variant='text' sx={styles.closeButton}>
@@ -170,5 +169,8 @@ const styles = {
     fontSize: '20px',
     fontWeight: 700,
     paddingLeft: [null, '15px'],
+  },
+  hiddenOnMobile: {
+    display: ['none', 'none', 'block'],
   },
 };

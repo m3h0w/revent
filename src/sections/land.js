@@ -23,6 +23,7 @@ import { FaPeopleCarry, FaTrain } from 'react-icons/fa';
 import { BiLandscape } from 'react-icons/bi';
 import { GiTrumpet, GiWoodPile, GiSoccerField } from 'react-icons/gi';
 import { AiFillEyeInvisible } from 'react-icons/ai';
+import IWantToHelpButton from 'components/IWantToHelp';
 
 SwiperCore.use([Autoplay, Pagination, EffectFade]);
 
@@ -148,7 +149,7 @@ const FeaturedSpace = () => {
               title='We found a perfect land in Sweden and we need your help!'
               description='We started a crowdfunding campaign and invite you to help us. Your donation will magically turn into a membership an grant you all the priviliges to co-create this beautiful dream with us'
             >
-              <Button variant='primaryMd'>I want to help</Button>
+              <IWantToHelpButton />
             </SectionHeading>
           </Box>
           <Box sx={styles.rightContent}>
