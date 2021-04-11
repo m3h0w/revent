@@ -34,10 +34,11 @@ export default function Banner() {
 const styles = {
   section: {
     background: `url(${bannerBg}) no-repeat center top / cover`,
-    backgroundSize: ['100%', null, null, null, 'cover'],
+    backgroundSize: [null, null, null, null, 'cover'],
     position: 'relative',
     overflowX: 'hidden',
     overflowY: 'hidden',
+    minHeight: '450px',
   },
   dividerLine: {
     borderBottom: `5px solid ${theme.colors.secondary}`,
@@ -51,7 +52,7 @@ const styles = {
   bannerContent: {
     backgroundColor: rgba('#fff', 0.7),
     boxShadow: ['0px 10px 16px rgba(52, 61, 72, 0.12)', null, null, null, 'none'],
-    maxWidth: '50vw',
+    maxWidth: [null, null, '70vw', '60vw', '50vw', '40vw'],
     // maxHeight: '40vh',
     padding: ['20px', '30px', null, null, null, '25px 35px 40px', '35px 40px 55px'],
     borderRadius: 5,
@@ -75,7 +76,7 @@ const styles = {
   desc: {
     fontSize: [15, 16, 15, 17],
     lineHeight: [1.53, null, null, 2, 2.4, 2, 2.48],
-    maxWidth: '37vw',
+    maxWidth: [null, null, '37vw', '37vw', '37vw', '37vw'],
     marginTop: [15, null, null, null, null, null, 15],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       mt: 15,
@@ -99,7 +100,7 @@ const styles = {
   },
   decorativeImage: {
     position: 'absolute',
-    bottom: '-70%',
+    bottom: ['-50%', '-50%', '-50%', '-60%', '-60%', '-70%'],
     right: '-49%',
     zIndex: 1,
     opacity: 0.3,

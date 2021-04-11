@@ -92,6 +92,7 @@ const styles = {
     transition: 'all 0.3s ease-in-out 0s',
     '&.is-mobile-menu': {
       backgroundColor: '#fff',
+      color: 'text_secondary',
     },
     color: '#fff',
   },
@@ -168,6 +169,6 @@ const styles = {
   logoName: {
     fontSize: '20px',
     fontWeight: 700,
-    paddingLeft: '15px',
+    paddingLeft: [null, '15px'],
   },
 };
