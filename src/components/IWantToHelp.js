@@ -7,7 +7,7 @@ const IWantToHelpButton = ({ stylesOverwrite }) => {
       variant='primaryMd'
       onClick={() => window.open('https://memberships.theborderland.se/borderland-land/crowdfunder/', '_blank')}
     >
-      I want to help
+      I want to help!
     </Button>
   );
 };

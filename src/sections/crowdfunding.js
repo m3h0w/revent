@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Participation from 'assets/images/principles/white/wick-white-participation.svg';
 import ProgressBar from '@ramonak/react-progress-bar';
 import useWindowSize from 'utils/useWindowSize';
+import IWantToHelpButton from 'components/IWantToHelp';
 
 const Crowdfunding = () => {
   const { width, height } = useWindowSize();
@@ -27,7 +28,7 @@ const Crowdfunding = () => {
           <div sx={styles.spacer} />
           {/* {children} */}
         </Box>
-        <div sx={{ width: width / 2 }}>
+        <Box as='div' sx={styles.progressContainer({ width: width / 2 })}>
           <Heading sx={styles.title}>Progress: 1 166 183 / 6 000 000 SEK</Heading>
           <ProgressBar
             completed={Number(((1666 / 6000) * 100).toFixed(0))}
@@ -36,8 +37,19 @@ const Crowdfunding = () => {
             width={width / 2}
             labelAlignment='center'
             labelColor='#ffffff'
+            margin='0 0 10px 0'
           />
-        </div>
+          <Text sx={styles.description} as='p'>
+            Backers: 157
+          </Text>
+          <Text sx={styles.description} as='p'>
+            Days left: 10
+          </Text>
+          <Text sx={styles.description} as='p'>
+            Minimum funding goal: 2 500 000 SEK
+          </Text>
+        </Box>
+        <IWantToHelpButton />
         <Image
           loading='lazy'
           src={Participation}
@@ -83,6 +95,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  progressContainer: (props) => ({ width: props.width, marginBottom: '20px' }),
   decorativeImage: {
     position: 'absolute',
     bottom: ['-50%', '-50%', '-50%', '-60%', '-60%', '-80%'],
