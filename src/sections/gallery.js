@@ -59,7 +59,13 @@ const Gallery = () => {
             <GalleryCard key={item.id} item={item} />
           ))}
         </Box>
-        <Button variant='muted' sx={styles.button}>
+        <Button
+          variant='muted'
+          sx={styles.button}
+          onClick={() =>
+            window.open('https://drive.google.com/drive/folders/10E5HfmEC12UB9FidUa8PN4yJLA0kEB-L', '_blank')
+          }
+        >
           Explore More <RiArrowRightSLine size='20px' />
         </Button>
       </Container>

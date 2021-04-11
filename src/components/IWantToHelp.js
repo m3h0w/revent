@@ -3,14 +3,12 @@ import React from 'react';
 
 const IWantToHelpButton = ({ stylesOverwrite }) => {
   return (
-    <a
-      href='https://memberships.theborderland.se/borderland-land/crowdfunder/'
-      target='_blank'
-      rel='noreferrer'
-      sx={{ ...stylesOverwrite, ...styles.link }}
+    <Button
+      variant='primaryMd'
+      onClick={() => window.open('https://memberships.theborderland.se/borderland-land/crowdfunder/', '_blank')}
     >
-      <Button variant='primaryMd'>I want to help</Button>
-    </a>
+      I want to help
+    </Button>
   );
 };
 
