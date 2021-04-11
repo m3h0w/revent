@@ -8,8 +8,13 @@ import mapMarker from 'assets/images/icons/map-marker.png';
 import theme from 'gatsby-plugin-theme-ui/index';
 import { ScrollRotate } from 'react-scroll-rotate';
 import communalEffort from 'assets/images/principles/white/wick-white-communal-effort.svg';
+import { useEffect, useState } from 'react';
 
 export default function Banner() {
+  const [mixBlendModeIsSupported, setMixBlendModeIsSupported] = useState(false);
+  useEffect(() => {
+    setMixBlendModeIsSupported(window.getComputedStyle(document.body).mixBlendMode !== undefined);
+  }, [setMixBlendModeIsSupported]);
   return (
     <Box as='section' id='home' sx={styles.section}>
       <Container>
@@ -26,7 +31,16 @@ export default function Banner() {
           </Box>
         </Box>
       </Container>
-      <Image loading='lazy' src={communalEffort} alt={'communal effort'} sx={styles.decorativeImage} />
+      <Image
+        loading='lazy'
+        src={communalEffort}
+        alt={'communal effort'}
+        sx={{
+          mixBlendMode: mixBlendModeIsSupported ? 'difference' : 'none',
+          opacity: mixBlendModeIsSupported ? 1 : 0.4,
+          ...styles.decorativeImage,
+        }}
+      />
     </Box>
   );
 }
@@ -55,7 +69,7 @@ const styles = {
     maxWidth: [null, null, '70vw', '60vw', '50vw', '40vw'],
     // maxHeight: '40vh',
     padding: ['20px', '30px', null, null, null, '25px 35px 40px', '35px 40px 55px'],
-    borderRadius: 5,
+    borderRadius: 40,
     m: ['110px 0 0', null, null, '110px auto 0', '60px 0 0', '60px 0 0', 0],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       maxWidth: 800,
@@ -67,15 +81,15 @@ const styles = {
     fontSize: [22, null, null, 40, null, 5, 6],
     fontWeight: 700,
     letterSpacing: 'heading',
-    lineHeight: [1.4, null, null, null, null, null, 1.57],
+    lineHeight: [1.15, null, null, null, null, null, 1.2],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       fontSize: 40,
     },
     marginBottom: 15,
   },
   desc: {
-    fontSize: [15, 16, 15, 17],
-    lineHeight: [1.53, null, null, 2, 2.4, 2, 2.48],
+    fontSize: [15, 17, 16, 19],
+    lineHeight: [1.4, null, null, 1.5, 1.6, 1.6, 1.6],
     maxWidth: [null, null, '37vw', '37vw', '37vw', '37vw'],
     marginTop: [15, null, null, null, null, null, 15],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
@@ -103,7 +117,8 @@ const styles = {
     bottom: ['-50%', '-50%', '-50%', '-60%', '-60%', '-70%'],
     right: '-49%',
     zIndex: 1,
-    opacity: 0.3,
+    // mixBlendMode: 'difference',
+    // opacity: 1,
     pointerEvents: 'none',
   },
 };
