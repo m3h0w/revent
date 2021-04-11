@@ -10,6 +10,7 @@ import Principles from 'sections/principles';
 import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
+import useWindowSize from 'utils/useWindowSize';
 
 export default function IndexPage() {
   return (

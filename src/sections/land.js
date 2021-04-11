@@ -16,6 +16,13 @@ import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
+import MapWithPhotos from 'components/mapWithPhotos';
+
+import { MdPhotoSizeSelectSmall } from 'react-icons/md';
+import { FaPeopleCarry, FaTrain } from 'react-icons/fa';
+import { BiLandscape } from 'react-icons/bi';
+import { GiTrumpet, GiWoodPile, GiSoccerField } from 'react-icons/gi';
+import { AiFillEyeInvisible } from 'react-icons/ai';
 
 SwiperCore.use([Autoplay, Pagination, EffectFade]);
 
@@ -23,59 +30,51 @@ const data = {
   feature: [
     {
       id: 1,
-      icon: expand,
+      icon: (props) => <MdPhotoSizeSelectSmall {...props} />,
       title: '42 ha',
       description: `It's huge! There is an almost endless space for new buildings, projects, and, of course, Borderland`,
     },
     {
       id: 2,
-      icon: users,
+      icon: (props) => <FaPeopleCarry {...props} />,
       title: 'Friendly municipality',
       description: `We won't have to worry about local government's support`,
     },
     {
       id: 3,
-      icon: wifi,
-      title: '100 mbps',
-      description: 'Direct connection to god. Miracles guaranteed.',
+      icon: (props) => <BiLandscape {...props} />,
+      title: 'Magical, hilly, diverse landscape!',
+      description: 'Inspiring and wast - perfect for all your unfulfilled dreams and potential realities',
     },
     {
       id: 4,
-      icon: wifi,
-      title: '100 mbps',
-      description: 'Direct connection to god. Miracles guaranteed.',
+      icon: (props) => <GiTrumpet {...props} />,
+      title: 'Passed the trumpet test',
+      description: 'Playing a trumpet while running around naked, without attracting neighbours attention',
     },
     {
       id: 5,
-      icon: wifi,
-      title: '100 mbps',
-      description: 'Direct connection to god. Miracles guaranteed.',
+      icon: (props) => <GiWoodPile {...props} />,
+      title: 'Infinite wood supply',
+      description: 'The forest, if taken care of, should provide plenty of wood for art projects',
     },
     {
       id: 6,
-      icon: wifi,
-      title: '100 mbps',
-      description: 'Direct connection to god. Miracles guaranteed.',
-    },
-  ],
-  gallery: [
-    {
-      id: 1,
-      image: slider1,
-      title: 'Field',
-      desc: 'About the field',
+      icon: (props) => <GiSoccerField {...props} />,
+      title: 'Open fields',
+      description: 'For big tents, small tents, football games - you name it',
     },
     {
-      id: 2,
-      image: slider2,
-      title: 'Shelter',
-      desc: 'About the shelter',
+      id: 7,
+      icon: (props) => <AiFillEyeInvisible {...props} />,
+      title: 'Valleys',
+      description: 'Hidden, isolated, magical spots for sound camps and the like',
     },
     {
-      id: 3,
-      image: slider3,
-      title: 'Quary',
-      desc: 'About the quary',
+      id: 8,
+      icon: (props) => <FaTrain {...props} />,
+      title: 'Easy to reach',
+      description: 'By train: Gothenborg 2h, Stockholm 2h, Copenhagen 3h, Oslo 5h',
     },
   ],
 };
@@ -151,20 +150,16 @@ const FeaturedSpace = () => {
             >
               <Button variant='primaryMd'>I want to help</Button>
             </SectionHeading>
-            <Box sx={styles.featureWrapper}>
-              {data?.feature?.map((feature) => (
-                <Feature key={feature.id} data={feature} />
-              ))}
-            </Box>
           </Box>
           <Box sx={styles.rightContent}>
-            <Progressbar
+            {/* <Progressbar
               sx={styles.progressbar}
               togglePlay={togglePlay}
               handleClick={handleToggle}
               currentWidth={currentWidth}
-            />
-            <Swiper loop={true} effect='fade' ref={swiperRef} spaceBetween={0} slidesPerView={1} pagination={true}>
+            /> */}
+            <MapWithPhotos sizeMultiplier={3 / 8} />
+            {/* <Swiper loop={true} effect='fade' ref={swiperRef} spaceBetween={0} slidesPerView={1} pagination={true}>
               {data?.gallery?.map((item) => (
                 <SwiperSlide key={item.id}>
                   <Box as='figure' sx={styles.image}>
@@ -178,8 +173,13 @@ const FeaturedSpace = () => {
                   </Box>
                 </SwiperSlide>
               ))}
-            </Swiper>
+            </Swiper> */}
           </Box>
+        </Box>
+        <Box sx={styles.featureWrapper}>
+          {data?.feature?.map((feature) => (
+            <Feature key={feature.id} data={feature} clickable={false} />
+          ))}
         </Box>
       </Container>
     </Box>
@@ -193,6 +193,7 @@ const styles = {
     pt: [30, null, null, null, 80],
     pb: [30, null, null, 50, 80],
     position: 'relative',
+    // overflowX: 'hidden',
   },
   contentWrapper: {
     gap: [0, 0, 0, 0, '30px'],
@@ -200,6 +201,7 @@ const styles = {
     alignItems: 'center',
     flexDirection: ['column', null, null, null, null],
     gridTemplateColumns: ['unset', null, null, null, 'repeat(2,1fr)'],
+    overflowX: 'hidden',
   },
   leftContent: {
     m: [0, '30px 0px 0', '30px 50px 0', 0],
@@ -221,8 +223,9 @@ const styles = {
   featureWrapper: {
     gap: ['40px 20px', null, null, null, '30px'],
     display: 'grid',
-    gridTemplateColumns: ['repeat(2,1fr)', null, null, 'repeat(3,180px)', 'repeat(3,1fr)'],
+    gridTemplateColumns: ['repeat(2,1fr)', null, null, 'repeat(4,180px)', 'repeat(4,1fr)'],
     justifyContent: ['unset', null, null, 'center', 'flex-start'],
+    marginTop: '40px',
   },
   rightContent: {
     position: 'relative',

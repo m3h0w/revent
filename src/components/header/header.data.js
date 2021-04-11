@@ -24,4 +24,8 @@ export default [
     path: 'crowdfunding',
     label: 'Crowdfunding',
   },
+  {
+    path: 'faq',
+    label: 'FAQ',
+  },
 ];
