@@ -27,6 +27,7 @@
     "react-icons": "^3.11.0",
     "react-masonry-component": "^6.2.1",
     "react-scroll": "^1.8.1",
+    "react-scroll-rotate": "0.0.7",
     "react-slick": "^0.27.11",
     "react-stickynode": "^3.0.3",
     "swiper": "^6.3.1",

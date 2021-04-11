@@ -7,6 +7,7 @@ import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import menuItems from './header.data';
 import theme from 'gatsby-plugin-theme-ui';
+import { ScrollRotate } from 'react-scroll-rotate';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -21,11 +22,25 @@ export default function Header() {
 
   return (
     <Box sx={styles.headerWrapper}>
-      <Sticky enabled={true} top={0} activeClass='is-sticky' innerZ={10}>
+      <Sticky enabled={true} top={0} activeClass='is-sticky' innerZ={30}>
         <Box as='header' sx={styles.header} className={mobileMenu ? 'is-mobile-menu' : ''}>
           <Container>
             <Box sx={styles.headerInner}>
-              <Logo />
+              <ScrollRotate
+                animationDuration={0.6}
+                method={'perc'}
+                loops={2}
+                style={{
+                  width: '32px',
+                  height: '45px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'flex-end',
+                }}
+              >
+                <Logo />
+              </ScrollRotate>
+
               <Text as='p' sx={styles.logoName}>
                 Borderland.Land
               </Text>

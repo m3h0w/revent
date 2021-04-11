@@ -6,6 +6,7 @@ import Select from 'components/select';
 import bannerBg from 'assets/images/banner-bg.jpg';
 import mapMarker from 'assets/images/icons/map-marker.png';
 import theme from 'gatsby-plugin-theme-ui/index';
+import { ScrollRotate } from 'react-scroll-rotate';
 import communalEffort from 'assets/images/principles/white/wick-white-communal-effort.svg';
 
 export default function Banner() {
@@ -22,24 +23,6 @@ export default function Banner() {
               An all-year-round playground for Borderland members to prototype dreams through art, events, workshops,
               and anything else you can imagine. A land to dream about what to do and who to be.
             </Text>
-            {/* <Box as="form" onSubmit={handleSubmit}>
-              <Select
-                id="location"
-                label="Find workplace"
-                defaultValue={options[1].label}
-                sx={styles.select}
-                icon={mapMarker}
-              >
-                {options?.map((option) => (
-                  <option value={option.value} key={option.id}>
-                    {option.label}
-                  </option>
-                ))}
-              </Select>
-              <Button type="submit" sx={styles.button} variant="primary">
-                Subscribe
-              </Button>
-            </Box> */}
           </Box>
         </Box>
       </Container>

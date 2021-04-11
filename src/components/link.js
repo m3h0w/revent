@@ -8,11 +8,12 @@ export function NavLink({ path, label, children, ...rest }) {
     <MenuLink
       to={path}
       spy={true}
-      offset={-70}
+      offset={-100}
+      delay={0.1}
       smooth={true}
       duration={500}
-      className="nav-item"
-      activeClass="active"
+      className='nav-item'
+      activeClass='active'
       {...rest}
     >
       {label}
