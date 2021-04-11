@@ -10,7 +10,7 @@ import Principles from 'sections/principles';
 import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
-import useWindowSize from 'utils/useWindowSize';
+import Crowdfunding from 'sections/crowdfunding';
 
 export default function IndexPage() {
   return (
@@ -21,6 +21,7 @@ export default function IndexPage() {
       {/* <Clients /> */}
       <Land />
       <Gallery />
+      <Crowdfunding />
       {/* <Pricing /> */}
       {/* <OurCustomer /> */}
       {/* <Blog /> */}

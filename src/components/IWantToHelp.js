@@ -12,10 +12,4 @@ const IWantToHelpButton = ({ stylesOverwrite }) => {
   );
 };
 
-const styles = {
-  link: {
-    textDecoration: 'none',
-  },
-};
-
 export default IWantToHelpButton;
