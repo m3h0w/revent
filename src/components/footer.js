@@ -52,6 +52,12 @@ export default function Footer() {
             ))}
           </Flex>
         </Flex>
+        <Text as='p'>
+          Principles designed by:{' '}
+          <Link href='http://jameswickham.com/' target='_blank'>
+            James Wickham
+          </Link>
+        </Text>
       </Container>
     </Box>
   );

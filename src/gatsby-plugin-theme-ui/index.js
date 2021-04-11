@@ -8,8 +8,8 @@ export default {
     background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#C69DD2', // border color
-    primary: '#7F7EFF', // primary button and link color
-    secondary: '#CC8B8C', // secondary color - can be used for hover states
+    primary: '#0FE6E6', // primary button and link color
+    secondary: '#FA7500', // secondary color - can be used for hover states
     muted: '#A390E4', // muted color
     accent: '#C68866', // a contrast color for emphasizing UI
     dark: '#10132D',
@@ -138,17 +138,17 @@ export default {
     nav: {
       display: ['none', null, 'inline-flex'],
       p: 2,
-      // transitionProperty: 'background-color',
-      // transitionTimingFunction: 'ease-out',
-      // transitionDuration: '.2s',
-      // borderRadius: 2,
-      // '&:hover': {
-      //   bg: 'highlight',
-      // },
-      // '&.active': {
-      //   color: 'primary',
-      //   bg: 'highlight',
-      // },
+      transitionProperty: 'background-color',
+      transitionTimingFunction: 'ease-out',
+      transitionDuration: '.2s',
+      borderRadius: 2,
+      '&:hover': {
+        bg: 'highlight',
+      },
+      '&.active': {
+        color: 'primary',
+        bg: 'highlight',
+      },
     },
     footer: {
       display: 'block',

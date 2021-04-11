@@ -3,10 +3,10 @@ export default [
     path: 'home',
     label: 'Home',
   },
-  // {
-  //   path: 'purpose',
-  //   label: 'Purpose',
-  // },
+  {
+    path: 'principles',
+    label: 'Principles',
+  },
   {
     path: 'land',
     label: 'Land',

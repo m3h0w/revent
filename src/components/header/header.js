@@ -6,6 +6,7 @@ import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import menuItems from './header.data';
+import theme from 'gatsby-plugin-theme-ui';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -33,12 +34,12 @@ export default function Header() {
                 <Box as='ul' sx={styles.navList} className={mobileMenu ? 'active' : ''}>
                   {menuItems.map(({ path, label }, i) => (
                     <li key={i}>
-                      <NavLink path={path} label={label} onClick={closeMobileMenu} sx={styles.link} />
+                      <NavLink path={path} label={label} onClick={closeMobileMenu} />
                     </li>
                   ))}
                 </Box>
                 <Button sx={styles.joinNow} variant='primaryMd'>
-                  Donate
+                  I want to help!
                 </Button>
               </Flex>
               {mobileMenu ? (
@@ -64,6 +65,7 @@ const styles = {
         backgroundColor: '#fff',
         boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
         py: [10],
+        color: 'text_secondary',
       },
     },
   },
@@ -76,6 +78,7 @@ const styles = {
     '&.is-mobile-menu': {
       backgroundColor: '#fff',
     },
+    color: '#fff',
   },
   headerInner: {
     display: 'flex',
@@ -123,12 +126,13 @@ const styles = {
     p: 0,
     '.nav-item': {
       cursor: 'pointer',
-      fontWeight: 400,
+      fontWeight: 500,
       padding: 0,
       margin: '0 20px',
     },
     '.active': {
-      color: 'primary',
+      borderBottom: `3px solid ${theme.colors.secondary}`,
+      paddingBottom: '2px',
     },
   },
   link: {

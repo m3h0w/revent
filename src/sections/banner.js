@@ -1,40 +1,14 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Heading, Text, Button } from 'theme-ui';
+import { jsx, Box, Container, Heading, Text, Button, Image } from 'theme-ui';
 import { rgba } from 'polished';
 
 import Select from 'components/select';
 import bannerBg from 'assets/images/banner-bg.jpg';
 import mapMarker from 'assets/images/icons/map-marker.png';
-
-const options = [
-  {
-    id: 1,
-    label: 'Brooklyn, New york',
-    value: 'Brooklyn, New york',
-  },
-  {
-    id: 2,
-    label: 'Atlanta, Georgia',
-    value: 'Atlanta, Georgia',
-  },
-  {
-    id: 3,
-    label: 'Minneapolis, Minnesota',
-    value: 'Minneapolis, Minnesota',
-  },
-  {
-    id: 4,
-    label: 'Chicago, Illinois',
-    value: 'Chicago, Illinois',
-  },
-];
+import theme from 'gatsby-plugin-theme-ui/index';
+import communalEffort from 'assets/images/principles/white/wick-white-communal-effort.svg';
 
 export default function Banner() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('submitting...');
-  };
-
   return (
     <Box as='section' id='home' sx={styles.section}>
       <Container>
@@ -43,6 +17,7 @@ export default function Banner() {
             <Heading as='h1' sx={styles.heroTitle}>
               A permanent space between dreams and reality
             </Heading>
+            <Box sx={styles.dividerLine}></Box>
             <Text as='p' sx={styles.desc}>
               An all-year-round playground for Borderland members to prototype dreams through art, events, workshops,
               and anything else you can imagine. A land to dream about what to do and who to be.
@@ -68,6 +43,7 @@ export default function Banner() {
           </Box>
         </Box>
       </Container>
+      <Image loading='lazy' src={communalEffort} alt={'communal effort'} sx={styles.decorativeImage} />
     </Box>
   );
 }
@@ -76,17 +52,25 @@ const styles = {
   section: {
     background: `url(${bannerBg}) no-repeat center top / cover`,
     backgroundSize: ['100%', null, null, null, 'cover'],
+    position: 'relative',
+    overflowX: 'hidden',
+    overflowY: 'hidden',
+  },
+  dividerLine: {
+    borderBottom: `5px solid ${theme.colors.secondary}`,
+    width: '150px',
   },
   contentWrapper: {
     display: 'flex',
     alignItems: 'center',
-    minHeight: [null, null, null, null, '50vh', '100vh'],
+    minHeight: [null, null, null, null, '100vh', '100vh'],
   },
   bannerContent: {
     backgroundColor: rgba('#fff', 0.7),
     boxShadow: ['0px 10px 16px rgba(52, 61, 72, 0.12)', null, null, null, 'none'],
-    maxWidth: [null, null, null, 600, 500, null, 650],
-    padding: ['20px', '30px', null, null, null, '30px 50px 60px', '50px 60px 90px'],
+    maxWidth: '50vw',
+    // maxHeight: '40vh',
+    padding: ['20px', '30px', null, null, null, '25px 35px 40px', '35px 40px 55px'],
     borderRadius: 5,
     m: ['110px 0 0', null, null, '110px auto 0', '60px 0 0', '60px 0 0', 0],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
@@ -103,12 +87,13 @@ const styles = {
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       fontSize: 40,
     },
+    marginBottom: 15,
   },
   desc: {
     fontSize: [15, 16, 15, 17],
     lineHeight: [1.53, null, null, 2, 2.4, 2, 2.48],
-    maxWidth: 440,
-    marginTop: [15, null, null, null, null, null, 30],
+    maxWidth: '37vw',
+    marginTop: [15, null, null, null, null, null, 15],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       mt: 15,
     },
@@ -128,5 +113,13 @@ const styles = {
     ':focus': {
       outline: '0 none',
     },
+  },
+  decorativeImage: {
+    position: 'absolute',
+    bottom: '-70%',
+    right: '-49%',
+    zIndex: 1,
+    opacity: 0.3,
+    pointerEvents: 'none',
   },
 };

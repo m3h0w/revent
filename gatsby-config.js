@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Borderland.Land`,
+    description: `An all-year-round playground for Borderland members to prototype dreams through art, events, workshops, and anything else you can imagine. A land to dream about what to do and who to be.`,
+    author: `@m3h0w`,
   },
   plugins: [
+    'gatsby-plugin-resolve-src',
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
     {
