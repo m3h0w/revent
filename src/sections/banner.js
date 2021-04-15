@@ -9,28 +9,49 @@ import theme from 'gatsby-plugin-theme-ui/index';
 import { ScrollRotate } from 'react-scroll-rotate';
 import communalEffort from 'assets/images/principles/white/wick-white-communal-effort.svg';
 import { useEffect, useState } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
 
 export default function Banner() {
   const [mixBlendModeIsSupported, setMixBlendModeIsSupported] = useState(false);
   useEffect(() => {
     setMixBlendModeIsSupported(window.getComputedStyle(document.body).mixBlendMode !== undefined);
   }, [setMixBlendModeIsSupported]);
+  const data = useStaticQuery(
+    graphql`
+      query {
+        desktop: file(relativePath: { eq: "banner-bg.jpg" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  );
+  const imageData = data.desktop.childImageSharp.fluid;
+
   return (
-    <Box as='section' id='home' sx={styles.section}>
-      <Container>
-        <Box sx={styles.contentWrapper}>
-          <Box sx={styles.bannerContent}>
-            <Heading as='h1' sx={styles.heroTitle}>
-              A permanent space between dreams and reality
-            </Heading>
-            <Box sx={styles.dividerLine}></Box>
-            <Text as='p' sx={styles.desc}>
-              An all-year-round playground for Borderland members to prototype dreams through art, events, workshops,
-              and anything else you can imagine. A land to dream about what to do and who to be.
-            </Text>
-          </Box>
+    <BackgroundImage
+      id='home'
+      Tag='section'
+      style={styles.newSection}
+      fluid={imageData}
+      backgroundColor={theme.colors.background}
+    >
+      <Box sx={styles.contentWrapper}>
+        <Box sx={styles.bannerContent}>
+          <Heading as='h1' sx={styles.heroTitle}>
+            A permanent space between dreams and reality
+          </Heading>
+          <Box sx={styles.dividerLine}></Box>
+          <Text as='p' sx={styles.desc}>
+            An all-year-round playground for Borderland members to prototype dreams through art, events, workshops, and
+            anything else you can imagine. A land to dream about what to do and who to be.
+          </Text>
         </Box>
-      </Container>
+      </Box>
       <Image
         loading='lazy'
         src={communalEffort}
@@ -41,14 +62,21 @@ export default function Banner() {
           ...styles.decorativeImage,
         }}
       />
-    </Box>
+    </BackgroundImage>
   );
 }
 
 const styles = {
+  newSection: {
+    width: '100%',
+    height: '100%',
+    backgroundPosition: 'bottom center',
+    backgroundRepeat: 'repeat-y',
+    backgroundSize: 'cover',
+  },
   section: {
-    background: `url(${bannerBg}) no-repeat center top / cover`,
-    backgroundSize: [null, null, null, null, 'cover'],
+    // background: `url(${bannerBg}) no-repeat center top / cover`,
+    // backgroundSize: [null, null, null, null, 'cover'],
     position: 'relative',
     overflowX: 'hidden',
     overflowY: 'hidden',
@@ -62,6 +90,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     minHeight: [null, null, null, null, '100vh', '100vh'],
+    padding: '20vh',
   },
   bannerContent: {
     backgroundColor: rgba('#fff', 0.7),
