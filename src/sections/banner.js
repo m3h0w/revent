@@ -73,6 +73,8 @@ const styles = {
     backgroundPosition: 'bottom center',
     backgroundRepeat: 'repeat-y',
     backgroundSize: 'cover',
+    overflowX: 'hidden',
+    overflowY: 'hidden',
   },
   section: {
     // background: `url(${bannerBg}) no-repeat center top / cover`,
@@ -89,8 +91,8 @@ const styles = {
   contentWrapper: {
     display: 'flex',
     alignItems: 'center',
-    minHeight: [null, null, null, null, '100vh', '100vh'],
-    padding: '20vh',
+    minHeight: ['80vh', '80vh', '80vh', '80vh', '100vh', '100vh'],
+    padding: ['2vh', '3vh', '5vh', '10vh', '20vh', '20vh'],
   },
   bannerContent: {
     backgroundColor: rgba('#fff', 0.7),
@@ -143,7 +145,8 @@ const styles = {
   },
   decorativeImage: {
     position: 'absolute',
-    bottom: ['-50%', '-50%', '-50%', '-60%', '-60%', '-70%'],
+    bottom: [null, '-50%', '-50%', '-60%', '-60%', '-70%'],
+    top: ['-20%', 'initial', null, null, null, null],
     right: '-49%',
     zIndex: 1,
     // mixBlendMode: 'difference',
