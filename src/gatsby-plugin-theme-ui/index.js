@@ -29,7 +29,8 @@ export default {
     body: 'DM Sans system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'DM Sans system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading:
+      'DM Sans system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     // heading: 'Bree Serif',
     monospace: 'Menlo, monospace',
   },
@@ -294,7 +295,7 @@ export default {
     // h1-h6 Heading styles
     h1: {
       variant: 'text.heading',
-      fontSize: 6,
+      fontSize: 10,
     },
     h2: {
       variant: 'text.heading',

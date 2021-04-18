@@ -11,21 +11,24 @@ import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
 import Crowdfunding from 'sections/crowdfunding';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function IndexPage() {
   return (
-    <Layout>
-      <SEO title='Borderland.Land' />
-      <Banner />
-      <Principles />
-      {/* <Clients /> */}
-      <Land />
-      <Gallery />
-      <Crowdfunding />
-      {/* <Pricing /> */}
-      {/* <OurCustomer /> */}
-      {/* <Blog /> */}
-      {/* <Subscription /> */}
-    </Layout>
+    <ParallaxProvider>
+      <Layout>
+        <SEO title="Borderland.Land" />
+        <Banner />
+        <Principles />
+        {/* <Clients /> */}
+        <Land />
+        <Gallery />
+        <Crowdfunding />
+        {/* <Pricing /> */}
+        {/* <OurCustomer /> */}
+        {/* <Blog /> */}
+        {/* <Subscription /> */}
+      </Layout>
+    </ParallaxProvider>
   );
 }

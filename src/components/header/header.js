@@ -23,8 +23,8 @@ export default function Header() {
 
   return (
     <Box sx={styles.headerWrapper}>
-      <Sticky enabled={true} top={0} activeClass='is-sticky' innerZ={30}>
-        <Box as='header' sx={styles.header} className={mobileMenu ? 'is-mobile-menu' : ''}>
+      <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={30}>
+        <Box as="header" sx={styles.header} className={mobileMenu ? 'is-mobile-menu' : ''}>
           <Container>
             <Box sx={styles.headerInner}>
               <ScrollRotate
@@ -42,12 +42,12 @@ export default function Header() {
                 <Logo />
               </ScrollRotate>
 
-              <Text as='p' sx={styles.logoName}>
+              <Text as="p" sx={styles.logoName}>
                 Borderland.Land
               </Text>
 
-              <Flex as='nav' sx={styles.navbar} className={mobileMenu ? 'navbar active' : 'navbar'}>
-                <Box as='ul' sx={styles.navList} className={mobileMenu ? 'active' : ''}>
+              <Flex as="nav" sx={styles.navbar} className={mobileMenu ? 'navbar active' : 'navbar'}>
+                <Box as="ul" sx={styles.navList} className={mobileMenu ? 'active' : ''}>
                   {menuItems.map(({ path, label }, i) => (
                     <li key={i}>
                       <NavLink path={path} label={label} onClick={closeMobileMenu} />
@@ -57,11 +57,11 @@ export default function Header() {
                 {/* <IWantToHelpButton stylesOverwrite={styles.hiddenOnMobile} /> */}
               </Flex>
               {mobileMenu ? (
-                <Button variant='text' sx={styles.closeButton}>
-                  <GrClose onClick={closeMobileMenu} size='20px' />
+                <Button variant="text" sx={styles.closeButton}>
+                  <GrClose onClick={closeMobileMenu} size="20px" />
                 </Button>
               ) : (
-                <MenuButton aria-label='Toggle Menu' onClick={openMobileMenu} />
+                <MenuButton aria-label="Toggle Menu" onClick={openMobileMenu} />
               )}
             </Box>
           </Container>
@@ -80,10 +80,13 @@ const styles = {
         boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
         py: [10],
         color: 'text_secondary',
+        opacity: 0.95,
       },
     },
   },
   header: {
+    opacity: 0,
+    // fontFamily: 'Parisienne, cursive',
     position: 'fixed',
     left: 0,
     right: 0,
@@ -93,7 +96,7 @@ const styles = {
       backgroundColor: '#fff',
       color: 'text_secondary',
     },
-    color: '#fff',
+    color: 'text_secondary',
   },
   headerInner: {
     display: 'flex',
@@ -166,9 +169,11 @@ const styles = {
     ml: '3px',
   },
   logoName: {
+    // fontFamily: 'Parisienne, cursive',
     fontSize: '20px',
     fontWeight: 700,
     paddingLeft: [null, '15px'],
+    color: theme.colors.text,
   },
   hiddenOnMobile: {
     display: ['none', 'none', 'block'],
