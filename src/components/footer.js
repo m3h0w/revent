@@ -34,17 +34,17 @@ const navItems = [
 
 export default function Footer() {
   return (
-    <Box as='footer' sx={styles.footer}>
+    <Box as="footer" sx={styles.footer}>
       <Container sx={styles.container}>
         <Flex sx={styles.content}>
           <Flex sx={styles.copyright}>
             <Logo white />
-            <Text as='span' sx={styles.logoName}>
+            <Text as="span" sx={styles.logoName}>
               The Borderland.Land
             </Text>
           </Flex>
 
-          <Flex as='ul' sx={styles.nav}>
+          <Flex as="ul" sx={styles.nav}>
             {navItems?.map((item) => (
               <li key={item.id}>
                 <Link path={item.link}>{item.title}</Link>
@@ -52,9 +52,9 @@ export default function Footer() {
             ))}
           </Flex>
         </Flex>
-        <Text as='p'>
+        <Text as="p">
           Principles designed by:{' '}
-          <Link href='http://jameswickham.com/' target='_blank'>
+          <Link path="http://jameswickham.com/" target="_blank">
             James Wickham
           </Link>
         </Text>

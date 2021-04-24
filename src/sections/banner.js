@@ -34,8 +34,7 @@ const BannerContent = () => {
 
   const borderlandExplanation = (
     <Text as="p" sx={{ ...styles.desc, marginBottom: '20px' }}>
-      Borderland is a Burning Man-inspired collective, community, A VISION FOR SOCIETY, which runs the annual
-      Borderland Event in Scandinavia.
+      Reventtttt
     </Text>
   );
 
@@ -53,12 +52,10 @@ const BannerContent = () => {
           sx={{ ...styles.desc, ...styles.titleInline, display: 'inline', cursor: 'pointer' }}
           onClick={() => setDisplayBorderlandExplanation(!displayBorderlandExplanation)}
         >
-          The Borderland collective&nbsp;
+          Revent&nbsp;
         </Text>
         <Text as="p" sx={{ ...styles.desc, display: 'inline' }}>
-          is about to purchase 42 Hectares of Land in the middle of Sweden, to establish a year round Burner
-          community and to host future Borderland events. It has forests and a beautiful lake, valleys for music
-          and dancing, plus, its super close to a train station.
+          is a gathering happening or not happening at the edge of the knives of relating.
         </Text>
       </>
     );

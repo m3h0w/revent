@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Borderland.Land`,
-    description: `An all-year-round playground for Borderland members to prototype dreams through art, events, workshops, and anything else you can imagine. A land to dream about what to do and who to be.`,
+    title: `Revent!`,
+    description: `Revent is a revent`,
     author: `@m3h0w`,
   },
   plugins: [
@@ -15,6 +15,14 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

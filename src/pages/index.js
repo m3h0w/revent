@@ -17,7 +17,7 @@ export default function IndexPage() {
   return (
     <ParallaxProvider>
       <Layout>
-        <SEO title="Borderland.Land" />
+        <SEO title="Revent" />
         <Banner />
         <Principles />
         {/* <Clients /> */}

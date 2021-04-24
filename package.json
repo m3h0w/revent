@@ -21,6 +21,7 @@
     "gatsby-plugin-sharp": "^2.6.36",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-source-filesystem": "^2.3.30",
+    "gatsby-transformer-remark": "^4.0.0",
     "gatsby-transformer-sharp": "^2.5.15",
     "polished": "^3.6.7",
     "prop-types": "^15.7.2",

@@ -9,8 +9,47 @@ import menuItems from './header.data';
 import theme from 'gatsby-plugin-theme-ui';
 import { ScrollRotate } from 'react-scroll-rotate';
 import IWantToHelpButton from 'components/IWantToHelp';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 
 export default function Header() {
+  // const [menuItemsState, setMenuItemsState] = useState([...menuItems]);
+  const result = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
+        edges {
+          node {
+            frontmatter {
+              slug
+              title
+            }
+          }
+        }
+      }
+    }
+  `);
+  // console.log({ result });
+  // // Handle errors
+  // if (
+  //   result.errors ||
+  //   !result.allMarkdownRemark ||
+  //   !result.allMarkdownRemark.edges ||
+  //   !result.allMarkdownRemark.edges.length
+  // ) {
+  //   console.error(`Error while running markdown header GraphQL query.`);
+  // } else {
+  //   const newMenuItems = [...menuItemsState];
+  //   result.allMarkdownRemark.edges.forEach(({ node }) => {
+  //     newMenuItems.push({
+  //       path: node.frontmatter.slug,
+  //       label: node.frontmatter.title,
+  //       separatePage: true,
+  //     });
+  //   });
+  //   setMenuItemsState(newMenuItems);
+  // }
+  // console.log({ menuItemsState });
+
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const openMobileMenu = () => {
@@ -48,11 +87,22 @@ export default function Header() {
 
               <Flex as="nav" sx={styles.navbar} className={mobileMenu ? 'navbar active' : 'navbar'}>
                 <Box as="ul" sx={styles.navList} className={mobileMenu ? 'active' : ''}>
-                  {menuItems.map(({ path, label }, i) => (
-                    <li key={i}>
-                      <NavLink path={path} label={label} onClick={closeMobileMenu} />
-                    </li>
-                  ))}
+                  {menuItems.map(({ path, label }, i) => {
+                    return (
+                      <li key={i}>
+                        <NavLink path={path} label={label} onClick={closeMobileMenu} />
+                      </li>
+                    );
+                  })}
+                  {result.allMarkdownRemark.edges.map(({ node, i }) => {
+                    return (
+                      <li key={i}>
+                        <Link to={node.frontmatter.slug} onClick={closeMobileMenu}>
+                          {node.frontmatter.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </Box>
                 {/* <IWantToHelpButton stylesOverwrite={styles.hiddenOnMobile} /> */}
               </Flex>
