@@ -107,15 +107,27 @@ export default function Principles() {
           <Text>Test</Text>
         </Box> */}
         <Box sx={styles.contentWrapper}>
-          <Box sx={styles.featureWrapper}>
-            {data?.feature?.map((feature, i) => (
+          {/* <Box sx={styles.featureWrapper}> */}
+          The event is non-profit and celebrates beauty and life in accordance with the Burning Man principles. It
+          is not a festival. It is an event, a community and a global cultural movement. During the event you are
+          responsible for your own survival, safety, and wellbeing. You will not be a guest, but a co-creating
+          participant, because we need YOU.
+          <hr></hr>
+          You are invited to collaborate, be inclusive, creative, connective, and to Leave No Trace. Get involved
+          in all the adventures that will make the event happen in all it´s beauty. The more you do, the more you
+          get back.
+          <hr></hr>
+          When you join others in play and in work, you are part of the burn. Your contribution is more valuable
+          than you realise. Our system is based on volunteering work. We need to work hand in hand. Our shift
+          system helps us to create a space everyone will be able to enjoy.
+          {/* {data?.feature?.map((feature, i) => (
               <Feature
                 key={i}
                 data={{ title: feature.title, icon: feature.icon }}
                 onClick={() => setCurrentSideModal(feature.title)}
               />
-            ))}
-          </Box>
+            ))} */}
+          {/* </Box> */}
         </Box>
         <Box sx={styles.spacer}></Box>
       </Container>
@@ -179,7 +191,11 @@ const styles = {
     },
   },
   contentWrapper: {
+    fontSize: [18, null, null, 22, 24, 26, 30],
+    color: '#fff',
     display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
     alignItems: 'center',
     minHeight: [null, null, null, null, '95vh', '95vh'],
   },

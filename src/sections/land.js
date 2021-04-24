@@ -146,7 +146,7 @@ const FeaturedSpace = () => {
           ></path>
         </svg>
       </div>
-      <Container>
+      {/* <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.leftContent}>
             <SectionHeading
@@ -160,28 +160,7 @@ const FeaturedSpace = () => {
             </SectionHeading>
           </Box>
           <Box sx={styles.rightContent}>
-            {/* <Progressbar
-              sx={styles.progressbar}
-              togglePlay={togglePlay}
-              handleClick={handleToggle}
-              currentWidth={currentWidth}
-            /> */}
             <MapWithPhotos sizeMultiplier={3 / 8} />
-            {/* <Swiper loop={true} effect='fade' ref={swiperRef} spaceBetween={0} slidesPerView={1} pagination={true}>
-              {data?.gallery?.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <Box as='figure' sx={styles.image}>
-                    <Image loading='lazy' src={item.image} alt='' />
-                    <Box as='figcaption'>
-                      <Box>
-                        <Heading as='h4'>{item.title}</Heading>
-                        <Text as='p'>{item.desc}</Text>
-                      </Box>
-                    </Box>
-                  </Box>
-                </SwiperSlide>
-              ))}
-            </Swiper> */}
           </Box>
         </Box>
         <Box sx={styles.featureWrapper}>
@@ -189,7 +168,7 @@ const FeaturedSpace = () => {
             <Feature key={feature.id} data={feature} clickable={false} parisienne={false} />
           ))}
         </Box>
-      </Container>
+      </Container> */}
     </Box>
   );
 };
@@ -198,8 +177,8 @@ export default FeaturedSpace;
 
 const styles = {
   section: {
-    pt: [30, null, null, null, 80],
-    pb: [30, null, null, 50, 80],
+    // pt: [30, null, null, null, 80],
+    // pb: [30, null, null, 50, 80],
     position: 'relative',
     // overflowX: 'hidden',
   },

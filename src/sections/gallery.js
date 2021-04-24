@@ -53,7 +53,7 @@ const Gallery = () => {
   return (
     <Box id="gallery" as="section" sx={styles.section}>
       <Container sx={styles.container}>
-        <SectionHeading sx={styles.heading} slogan="More pictures!" title="How beauitful is that?" />
+        <SectionHeading sx={styles.heading} slogan="Some pictures :)" title="Pictures pictures" />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {data?.map((item) => (
             <GalleryCard key={item.id} item={item} />
@@ -66,7 +66,7 @@ const Gallery = () => {
             window.open('https://drive.google.com/drive/folders/10E5HfmEC12UB9FidUa8PN4yJLA0kEB-L', '_blank')
           }
         >
-          Explore More <RiArrowRightSLine size="20px" />
+          Sign me up! <RiArrowRightSLine size="20px" />
         </Button>
       </Container>
       <div sx={styles.customShapeDividerTop}>

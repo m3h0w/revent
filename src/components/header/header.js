@@ -16,7 +16,7 @@ export default function Header() {
   // const [menuItemsState, setMenuItemsState] = useState([...menuItems]);
   const result = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___order] }, limit: 1000) {
         edges {
           node {
             frontmatter {
@@ -62,76 +62,102 @@ export default function Header() {
 
   return (
     <Box sx={styles.headerWrapper}>
-      <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={30}>
-        <Box as="header" sx={styles.header} className={mobileMenu ? 'is-mobile-menu' : ''}>
-          <Container>
-            <Box sx={styles.headerInner}>
+      {/* <Sticky enabled={true} top={-1} activeClass="is-sticky" innerZ={30}> */}
+      <Box as="header" sx={styles.header} className={mobileMenu ? 'is-mobile-menu' : ''}>
+        <Container>
+          <Box sx={styles.headerInner}>
+            <Link to={'/'} sx={styles.clearLink}>
               <ScrollRotate
                 animationDuration={0.6}
                 method={'perc'}
                 loops={2}
                 style={{
-                  width: '32px',
-                  height: '45px',
+                  // width: '32px',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'flex-end',
+                  fontSize: '20px',
+                  fontWeight: 700,
+                  color: theme.colors.text,
                 }}
+                sx={styles.logoName}
               >
-                <Logo />
+                [RE]
               </ScrollRotate>
 
               <Text as="p" sx={styles.logoName}>
-                Borderland.Land
+                VENT
               </Text>
+            </Link>
 
-              <Flex as="nav" sx={styles.navbar} className={mobileMenu ? 'navbar active' : 'navbar'}>
-                <Box as="ul" sx={styles.navList} className={mobileMenu ? 'active' : ''}>
-                  {menuItems.map(({ path, label }, i) => {
+            <Flex as="nav" sx={styles.navbar} className={mobileMenu ? 'navbar active' : 'navbar'}>
+              <Box as="ul" sx={styles.navList} className={mobileMenu ? 'active' : ''}>
+                {/* {menuItems.map(({ path, label }, i) => {
                     return (
                       <li key={i}>
                         <NavLink path={path} label={label} onClick={closeMobileMenu} />
                       </li>
                     );
-                  })}
-                  {result.allMarkdownRemark.edges.map(({ node, i }) => {
-                    return (
-                      <li key={i}>
-                        <Link to={node.frontmatter.slug} onClick={closeMobileMenu}>
-                          {node.frontmatter.title}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </Box>
-                {/* <IWantToHelpButton stylesOverwrite={styles.hiddenOnMobile} /> */}
-              </Flex>
-              {mobileMenu ? (
-                <Button variant="text" sx={styles.closeButton}>
-                  <GrClose onClick={closeMobileMenu} size="20px" />
-                </Button>
-              ) : (
-                <MenuButton aria-label="Toggle Menu" onClick={openMobileMenu} />
-              )}
-            </Box>
-          </Container>
-        </Box>
-      </Sticky>
+                  })} */}
+                <li key={-1}>
+                  <Link
+                    sx={styles.navLink}
+                    className="nav-item"
+                    activeClass="active"
+                    to={'/'}
+                    onClick={closeMobileMenu}
+                  >
+                    Home
+                  </Link>
+                </li>
+                {result.allMarkdownRemark.edges.map(({ node, i }) => {
+                  return (
+                    <li key={i}>
+                      <Link
+                        sx={styles.navLink}
+                        className="nav-item"
+                        activeClass="active"
+                        to={node.frontmatter.slug}
+                        onClick={closeMobileMenu}
+                      >
+                        {node.frontmatter.title}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </Box>
+              {/* <IWantToHelpButton stylesOverwrite={styles.hiddenOnMobile} /> */}
+            </Flex>
+            {mobileMenu ? (
+              <Button variant="text" sx={styles.closeButton}>
+                <GrClose onClick={closeMobileMenu} size="20px" />
+              </Button>
+            ) : (
+              <MenuButton aria-label="Toggle Menu" onClick={openMobileMenu} />
+            )}
+          </Box>
+        </Container>
+      </Box>
+      {/* </Sticky> */}
     </Box>
   );
 }
 
 const styles = {
+  clearLink: {
+    textDecoration: 'none',
+    display: 'flex',
+  },
   headerWrapper: {
-    backgroundColor: 'transparent',
-    '.is-sticky': {
-      header: {
-        backgroundColor: '#fff',
-        boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
-        py: [10],
-        color: 'text_secondary',
-        opacity: 0.95,
-      },
+    // backgroundColor: 'transparent',
+    header: {
+      backgroundColor: '#fff',
+      // boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
+      borderBottom: '1px solid #ccc',
+      py: [10],
+      color: 'text_secondary',
+      opacity: 0.95,
+      zIndex: 1000,
     },
   },
   header: {
@@ -208,6 +234,10 @@ const styles = {
     padding: '15px',
     cursor: 'pointer',
   },
+  navLink: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
   joinNow: {
     marginLeft: 'auto',
   },
@@ -222,7 +252,7 @@ const styles = {
     // fontFamily: 'Parisienne, cursive',
     fontSize: '20px',
     fontWeight: 700,
-    paddingLeft: [null, '15px'],
+    // paddingLeft: [null, '15px'],
     color: theme.colors.text,
   },
   hiddenOnMobile: {

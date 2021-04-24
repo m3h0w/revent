@@ -38,9 +38,9 @@ export default function Footer() {
       <Container sx={styles.container}>
         <Flex sx={styles.content}>
           <Flex sx={styles.copyright}>
-            <Logo white />
+            {/* <Logo white /> */}
             <Text as="span" sx={styles.logoName}>
-              The Borderland.Land
+              Contact
             </Text>
           </Flex>
 
@@ -52,12 +52,6 @@ export default function Footer() {
             ))}
           </Flex>
         </Flex>
-        <Text as="p">
-          Principles designed by:{' '}
-          <Link path="http://jameswickham.com/" target="_blank">
-            James Wickham
-          </Link>
-        </Text>
       </Container>
     </Box>
   );
@@ -66,6 +60,7 @@ export default function Footer() {
 const styles = {
   footer: {
     backgroundColor: '#020718',
+    paddingTop: '30px',
   },
   content: {
     alignItems: 'center',

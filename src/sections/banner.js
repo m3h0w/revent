@@ -138,7 +138,7 @@ const styles = {
   newSection: {
     width: '100%',
     height: '100%',
-    backgroundPosition: 'bottom center',
+    backgroundPosition: 'top center',
     backgroundRepeat: 'repeat-y',
     backgroundSize: 'cover',
     overflowX: 'hidden',
@@ -166,7 +166,7 @@ const styles = {
     minHeight: '100vh',
     padding: ['2vh', '3vh', '5vh', '10vh', '10vh', '10vh'],
     background:
-      'linear-gradient(to top,rgba(255,255,255,0.97),rgba(255,255,255,0.96),rgba(255,255,255,0.95),rgba(255,255,255,0.9))',
+      'linear-gradient(to top,rgba(255,255,255,0.87),rgba(255,255,255,0.86),rgba(255,255,255,0.85),rgba(255,255,255,0.8))',
   },
   bannerContent: ({ clickable }) => ({
     animation: `${shake} 1s ease infinite`,

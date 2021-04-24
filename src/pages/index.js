@@ -23,7 +23,7 @@ export default function IndexPage() {
         {/* <Clients /> */}
         <Land />
         <Gallery />
-        <Crowdfunding />
+        {/* <Crowdfunding /> */}
         {/* <Pricing /> */}
         {/* <OurCustomer /> */}
         {/* <Blog /> */}
