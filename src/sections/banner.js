@@ -224,7 +224,6 @@ const styles = {
   desc: {
     fontSize: 19,
     lineHeight: [1.4, null, null, 1.5, 1.6, 1.6, 1.6],
-    maxWidth: [null, null, '37vw', '37vw', '37vw', '37vw'],
   },
   select: {
     marginTop: 30,
