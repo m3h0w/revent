@@ -225,10 +225,6 @@ const styles = {
     fontSize: 19,
     lineHeight: [1.4, null, null, 1.5, 1.6, 1.6, 1.6],
     maxWidth: [null, null, '37vw', '37vw', '37vw', '37vw'],
-    marginTop: [15, null, null, null, null, null, 15],
-    '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
-      mt: 15,
-    },
   },
   select: {
     marginTop: 30,
