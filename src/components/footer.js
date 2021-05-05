@@ -8,7 +8,7 @@ const navItems = [
   {
     id: 1,
     link: '#',
-    title: 'Home',
+    title: 'Take me back to the top!',
   },
   // {
   //   id: 2,
@@ -39,9 +39,9 @@ export default function Footer() {
         <Flex sx={styles.content}>
           <Flex sx={styles.copyright}>
             {/* <Logo white /> */}
-            <Text as="span" sx={styles.logoName}>
+            {/* <Text as="span" sx={styles.logoName}>
               Contact
-            </Text>
+            </Text> */}
           </Flex>
 
           <Flex as="ul" sx={styles.nav}>

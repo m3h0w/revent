@@ -54,7 +54,7 @@ const Gallery = () => {
   return (
     <Box id="gallery" as="section" sx={styles.section}>
       <Container sx={styles.container}>
-        <SectionHeading sx={styles.heading} slogan="Some pictures :)" title="Pictures pictures" />
+        <SectionHeading sx={styles.heading} slogan="Some pictures from the location" title="Tysmosen" />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {data?.map((item) => (
             <GalleryCard key={item.id} item={item} />

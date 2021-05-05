@@ -42,7 +42,7 @@ const BannerContent = () => {
   }, [width, displayInformation]);
 
   const borderlandExplanation = (
-    <Text as="p" sx={{ ...styles.desc, marginBottom: '20px' }}>
+    <Text as="p" sx={{ ...styles.desc, margin: 0, marginBottom: '20px' }}>
       [𝗿𝗲]vent is a mini-burn organised by the Copenhagen's [𝗿𝗲]connect community. It is our yearly coming together
       to [𝗿𝗲]𝖼𝗈𝗇𝗇𝖾𝖼𝗍, [𝗿𝗲]𝗂𝗆𝖺𝗀𝗂𝗇𝖾, [𝗿𝗲]𝗂𝗇𝗏𝗂𝗀𝗈𝗋𝖺𝗍𝖾. To [𝗿𝗲]𝗅𝖺𝗍𝖾, [𝗿𝗲]𝗌𝗉𝖾𝖼𝗍 and [𝗿𝗲]𝖼𝖾𝗂𝗏𝖾.
     </Text>
