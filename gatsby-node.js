@@ -51,7 +51,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const markdownPagesTemplate = require.resolve(`./src/templates/markdownPagesTemplate.js`);
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___order] }, limit: 1000) {
+      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }, limit: 1000) {
         edges {
           node {
             frontmatter {

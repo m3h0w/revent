@@ -62,7 +62,7 @@ export default function Header() {
 
   return (
     <Box sx={styles.headerWrapper}>
-      {/* <Sticky enabled={true} top={-1} activeClass="is-sticky" innerZ={30}> */}
+      {/* <Sticky enabled={true} top={-1} activeclass="is-sticky" innerZ={30}> */}
       <Box as="header" sx={styles.header} className={mobileMenu ? 'is-mobile-menu' : ''}>
         <Container>
           <Box sx={styles.headerInner}>
@@ -103,7 +103,7 @@ export default function Header() {
                   <Link
                     sx={styles.navLink}
                     className="nav-item"
-                    activeClass="active"
+                    activeclass="active"
                     to={'/'}
                     onClick={closeMobileMenu}
                   >
@@ -116,7 +116,7 @@ export default function Header() {
                       <Link
                         sx={styles.navLink}
                         className="nav-item"
-                        activeClass="active"
+                        activeclass="active"
                         to={node.frontmatter.slug}
                         onClick={closeMobileMenu}
                       >

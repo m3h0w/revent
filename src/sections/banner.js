@@ -14,6 +14,7 @@ import BackgroundImage from 'gatsby-background-image';
 import menuItems from 'components/header/header.data';
 import { NavLink } from 'components/link';
 import { BiInfinite } from 'react-icons/bi';
+import useWindowSize from 'utils/useWindowSize';
 // import { animateScroll } from 'react-scroll';
 
 const shake = `0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -29,12 +30,21 @@ const shake = `0% { transform: translate(1px, 1px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }`;
 
 const BannerContent = () => {
+  const { width, height } = useWindowSize();
+  console.log({ width });
   const [displayInformation, setDisplayInformation] = useState(false);
   const [displayBorderlandExplanation, setDisplayBorderlandExplanation] = useState(false);
 
+  useEffect(() => {
+    if (!displayInformation && width < 900) {
+      setDisplayInformation(true);
+    }
+  }, [width, displayInformation]);
+
   const borderlandExplanation = (
     <Text as="p" sx={{ ...styles.desc, marginBottom: '20px' }}>
-      Reventtttt
+      [𝗿𝗲]vent is a mini-burn organised by the Copenhagen's [𝗿𝗲]connect community. It is our yearly coming together
+      to [𝗿𝗲]𝖼𝗈𝗇𝗇𝖾𝖼𝗍, [𝗿𝗲]𝗂𝗆𝖺𝗀𝗂𝗇𝖾, [𝗿𝗲]𝗂𝗇𝗏𝗂𝗀𝗈𝗋𝖺𝗍𝖾. To [𝗿𝗲]𝗅𝖺𝗍𝖾, [𝗿𝗲]𝗌𝗉𝖾𝖼𝗍 and [𝗿𝗲]𝖼𝖾𝗂𝗏𝖾.
     </Text>
   );
 
@@ -43,19 +53,27 @@ const BannerContent = () => {
       Welcome<br></br>home.
     </Heading>
   );
+
+  const outToCome = `<out>-<to come>`;
+
+  const againToCome = `<again>-<to come>`;
   if (displayInformation) {
     mainContent = (
       <>
-        {displayBorderlandExplanation ? borderlandExplanation : null}
-        <Text
-          as="span"
-          sx={{ ...styles.desc, ...styles.titleInline, display: 'inline', cursor: 'pointer' }}
-          onClick={() => setDisplayBorderlandExplanation(!displayBorderlandExplanation)}
-        >
-          Revent&nbsp;
+        {borderlandExplanation}
+        <Text as="span" sx={{ ...styles.desc, ...styles.titleInline, display: 'inline' }}>
+          E-vent&nbsp;
         </Text>
         <Text as="p" sx={{ ...styles.desc, display: 'inline' }}>
-          is a gathering happening or not happening at the edge of the knives of relating.
+          , from latin 𝑒𝑥-𝑣𝑒𝑛𝑖𝑟𝑒 ({outToCome}), that which happens.
+        </Text>
+        <br></br>
+
+        <Text as="span" sx={{ ...styles.desc, ...styles.titleInline, display: 'inline' }}>
+          Re-vent&nbsp;
+        </Text>
+        <Text as="p" sx={{ ...styles.desc, display: 'inline' }}>
+          , ({againToCome}), that which happens again.
         </Text>
       </>
     );
@@ -132,7 +150,7 @@ const styles = {
     fontFamily: 'Parisienne, cursive',
     transition: '0.5s ease-in-out 0s',
     ':hover': {
-      transform: 'scale(1.1)',
+      transform: 'scale(1.2)',
     },
   },
   newSection: {
@@ -173,11 +191,11 @@ const styles = {
     cursor: clickable ? 'pointer' : 'initial',
     // backgroundColor: rgba('#fff', 0.7),
     // boxShadow: ['0px 10px 16px rgba(52, 61, 72, 0.12)', null, null, null, 'none'],
-    maxWidth: [null, null, '70vw', '60vw', '50vw', '40vw'],
+    maxWidth: [null, null, '80vw', '70vw', '60vw', '50vw'],
     // maxHeight: '40vh',
     padding: ['20px', '30px', null, null, null, '25px 35px 40px', '35px 40px 55px'],
     borderRadius: 40,
-    m: ['110px 0 0', null, null, '110px auto 0', '60px 0 0', '60px 0 0', 0],
+    m: 'auto auto',
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       maxWidth: 800,
       mt: 70,

@@ -13,7 +13,7 @@ export function NavLink({ path, label, children, ...rest }) {
       smooth={true}
       duration={500}
       className="nav-item"
-      activeClass="active"
+      activeclass="active"
       {...rest}
     >
       {children ? children : label}

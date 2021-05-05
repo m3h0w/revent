@@ -11,37 +11,38 @@ import gallery3 from 'assets/images/gallery/3.jpg';
 import gallery4 from 'assets/images/gallery/4.jpg';
 import gallery5 from 'assets/images/gallery/5.jpg';
 import gallery6 from 'assets/images/gallery/6.jpg';
+import { navigate } from 'gatsby-link';
 
 const data = [
   {
     id: 1,
     image: gallery1,
-    title: 'Field',
+    title: 'Pink flowers',
   },
   {
     id: 2,
     image: gallery2,
-    title: 'Shelter',
+    title: 'Green umbrella ',
   },
   {
     id: 3,
     image: gallery3,
-    title: 'Quary',
+    title: 'Sunny grass',
   },
   {
     id: 4,
     image: gallery4,
-    title: 'Swamp',
+    title: 'No filter',
   },
   {
     id: 6,
     image: gallery6,
-    title: 'More swamp',
+    title: 'Puffy clouds',
   },
   {
     id: 5,
     image: gallery5,
-    title: 'Hills',
+    title: 'Wooden planks',
   },
 ];
 
@@ -59,13 +60,7 @@ const Gallery = () => {
             <GalleryCard key={item.id} item={item} />
           ))}
         </Box>
-        <Button
-          variant="muted"
-          sx={styles.button}
-          onClick={() =>
-            window.open('https://drive.google.com/drive/folders/10E5HfmEC12UB9FidUa8PN4yJLA0kEB-L', '_blank')
-          }
-        >
+        <Button variant="muted" sx={styles.button} onClick={() => navigate('/memberships')}>
           Sign me up! <RiArrowRightSLine size="20px" />
         </Button>
       </Container>
