@@ -57,11 +57,11 @@ const styles = {
   },
   imgContainer: {
     width: ['95vw', '85vw', '75vw', '70vw', '65vw', '60vw'],
-    height: '300px',
+    height: '400px',
   },
   img: {
     width: ['95vw', '85vw', '75vw', '70vw', '65vw', '60vw'],
-    height: '300px',
+    height: '400px',
   },
   title: {
     textAlign: 'center',

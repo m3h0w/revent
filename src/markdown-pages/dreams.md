@@ -2,7 +2,7 @@
 slug: '/dreams'
 title: 'Dreams'
 order: 2
-featuredImgUrl: 'https://images.unsplash.com/photo-1505147704403-c2caf85db293?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1948&q=80'
+featuredImgUrl: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1971&q=80'
 ---
 
 Dreaming is a central part of a burn; a burn starts in someone’s dream and is created in the dreams of leads, of the crazy ones with big aspirations, of the foresighted who make dreams and realities meet, of us all.
