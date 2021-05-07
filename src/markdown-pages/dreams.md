@@ -13,4 +13,4 @@ Dreaming is a process that once it is started and shared with others inspires fo
 
 A digital **Dream Platform** forms the space where we can share our wildest dreams - and search for whatever it is you need to fulfill this dream. Here we can search for co-dreamers, ask for this one unique thingy that you need for your dream that someone might happen to have in their basement, or apply for a share of the dream grant of 30.000 DKK to cover material costs you have to purchase. Perhaps someone had a similar dream or simply wants to join forces with you to co-create this dream, wouldn’t that be wonderful? Finally, here we can also get all excited by looking through what dreams are brewing and show them our excitement by making sure they get the co-dreamers, thingies and funds they need to come alive!
 
-<a href="https://tinyurl.com/4wya2zwt" target="_blank"><h3 style="text-align: center;">Go to where the dreaming happens ✨</h3></a>
+<a href="https://reconnect.dreams.wtf/revent" target="_blank"><h3 style="text-align: center;">Go to where the dreaming happens ✨</h3></a>
