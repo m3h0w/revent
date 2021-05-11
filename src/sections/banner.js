@@ -195,7 +195,7 @@ const styles = {
       'linear-gradient(to top,rgba(255,255,255,0.87),rgba(255,255,255,0.86),rgba(255,255,255,0.85),rgba(255,255,255,0.8))',
   },
   bannerContent: ({ clickable }) => ({
-    animation: `${shake} 3s linear 3s infinite`,
+    animation: clickable ? `${shake} 3s linear 1.5s infinite` : 'none',
     cursor: clickable ? 'pointer' : 'initial',
     // backgroundColor: rgba('#fff', 0.7),
     // boxShadow: ['0px 10px 16px rgba(52, 61, 72, 0.12)', null, null, null, 'none'],
