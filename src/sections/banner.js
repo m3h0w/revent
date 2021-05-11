@@ -17,17 +17,15 @@ import { BiInfinite } from 'react-icons/bi';
 import useWindowSize from 'utils/useWindowSize';
 // import { animateScroll } from 'react-scroll';
 
-const shake = `0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }`;
+const shake = keyframes`{
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  4% { transform: translate(-1px, -2px) rotate(-1deg); }
+  8% { transform: translate(-3px, 0px) rotate(1deg); }
+  12% { transform: translate(3px, 2px) rotate(0deg); }
+  16% { transform: translate(1px, -1px) rotate(1deg); }
+  20% { transform: translate(-1px, 2px) rotate(-1deg); }
+  24% { transform: translate(0px, 0px) rotate(0deg); }
+}`;
 
 const BannerContent = () => {
   const { width, height } = useWindowSize();
@@ -49,9 +47,11 @@ const BannerContent = () => {
   );
 
   let mainContent = (
-    <Heading as="h1" sx={styles.heroTitle}>
-      Welcome<br></br>home.
-    </Heading>
+    <>
+      <Heading as="h1" sx={styles.heroTitle}>
+        Welcome<br></br>home.
+      </Heading>
+    </>
   );
 
   const outToCome = `<out>-<to come>`;
@@ -80,6 +80,9 @@ const BannerContent = () => {
   }
   return (
     <Box sx={styles.bannerContent({ clickable: !displayInformation })} onClick={() => setDisplayInformation(true)}>
+      <Heading as="h4" sx={styles.dateDescription}>
+        [re]vent | 19-25 July 2021, Copenhagen
+      </Heading>
       {mainContent}
     </Box>
   );
@@ -172,6 +175,11 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
   },
+  dateDescription: {
+    paddingBottom: '20px',
+    borderBottom: '1px solid #ccc',
+    marginBottom: '20px',
+  },
   dividerLine: {
     borderBottom: `5px solid ${theme.colors.secondary}`,
     width: '150px',
@@ -187,7 +195,7 @@ const styles = {
       'linear-gradient(to top,rgba(255,255,255,0.87),rgba(255,255,255,0.86),rgba(255,255,255,0.85),rgba(255,255,255,0.8))',
   },
   bannerContent: ({ clickable }) => ({
-    animation: `${shake} 1s ease infinite`,
+    animation: `${shake} 3s linear 3s infinite`,
     cursor: clickable ? 'pointer' : 'initial',
     // backgroundColor: rgba('#fff', 0.7),
     // boxShadow: ['0px 10px 16px rgba(52, 61, 72, 0.12)', null, null, null, 'none'],
@@ -206,6 +214,7 @@ const styles = {
     transition: '0.5s ease-in-out 0.1s',
     ':hover': {
       transform: clickable ? 'scale(1.2)' : 'none',
+      animation: `none`,
     },
   }),
   heroTitle: {
