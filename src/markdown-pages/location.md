@@ -43,4 +43,10 @@ What is a good idea to think about as a soundlead: What way should the speakers 
 
 Part of Tysmosen is a protected area and the animals are not used to loud speakers, so lets make it enjoyable for all livings to be present :D
 
+### Nudity
+
+Tysmosen is a nudist camping site on a regular basis, so there might be some raw human bodies both among our hosts and among ourselves.
+
+---
+
 Authors: _Amalie & Baloo_

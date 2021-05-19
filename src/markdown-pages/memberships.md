@@ -39,4 +39,6 @@ If everything goes well, there is no option to let your membership be reimbursed
 
 In the unfortunate event that we have to cancel [re]vent because of corona, we will reimburse the memberships, but we will not be able to reimburse the full amount. Even before the event we will have to put down expenses that we will not be able to cancel. How much of the original fee we will be able to reimburse is hard to tell at this point.
 
+---
+
 Author: _Thibault_

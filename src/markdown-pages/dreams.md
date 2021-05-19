@@ -15,4 +15,6 @@ A digital **Dreams Platform** forms the space where we can share our wildest dre
 
 <a href="https://reconnect.dreams.wtf/revent" target="_blank"><h3 style="text-align: center;">Go to where the dreaming happens ✨</h3></a>
 
+---
+
 Authors: _Nina & Mareike_
