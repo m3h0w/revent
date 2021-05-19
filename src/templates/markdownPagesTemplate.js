@@ -58,10 +58,12 @@ const styles = {
   imgContainer: {
     width: ['95vw', '85vw', '75vw', '70vw', '65vw', '60vw'],
     height: '400px',
+    maxWidth: '1000px',
   },
   img: {
     width: ['95vw', '85vw', '75vw', '70vw', '65vw', '60vw'],
     height: '400px',
+    maxWidth: '1000px',
   },
   title: {
     textAlign: 'center',
@@ -73,6 +75,7 @@ const styles = {
   },
   content: {
     width: ['95vw', '85vw', '75vw', '70vw', '65vw', '60vw'],
+    maxWidth: '1000px',
     borderLeft: '5px solid #444',
     paddingLeft: '20px',
   },

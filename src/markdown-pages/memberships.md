@@ -38,3 +38,5 @@ In case the sign-ups exceed the total limit of each round, there will be a lotte
 If everything goes well, there is no option to let your membership be reimbursed. If you bought a membership and can’t go, then it is your responsibility to find another person to sell it to. Once you found someone, please get in touch with <a href="https://www.facebook.com/thibault.vondannen/" target="_blank">Thibault</a>.
 
 In the unfortunate event that we have to cancel [re]vent because of corona, we will reimburse the memberships, but we will not be able to reimburse the full amount. Even before the event we will have to put down expenses that we will not be able to cancel. How much of the original fee we will be able to reimburse is hard to tell at this point.
+
+Author: _Thibault_

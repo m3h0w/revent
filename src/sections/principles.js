@@ -111,6 +111,15 @@ export default function Principles() {
             Co-create with us!
           </Heading>
           <hr></hr>
+          [RE]vent is a one-week 200-people co-created communal event that aims at creating a magical space that
+          allows us to grow and engage in self- and other-exploration. [RE]vent has many faces and aspects and it
+          is for all participants to find out what experience they want to create, but our focus lies on exploring
+          how to relate authentically with ourselves and others.
+          <Box sx={styles.spacer}></Box>
+          <Button variant="muted" sx={styles.button} onClick={() => navigate('/what-is-revent')}>
+            Tell me more!
+          </Button>
+          <hr></hr>
           {/* <Box sx={styles.featureWrapper}> */}A burn is not a festival — it is a co-created event in which all
           participants are invited to bring their own gifts and skills to build a magical place together.
           <hr></hr>

@@ -42,3 +42,5 @@ We are very welcome to bring “silent disco” and keep the dancing going. Mayb
 What is a good idea to think about as a soundlead: What way should the speakers turn if we are taking nature and neighbours into account? Can the speakers be smaller than last year? Can we think about how loud the bass are?
 
 Part of Tysmosen is a protected area and the animals are not used to loud speakers, so lets make it enjoyable for all livings to be present :D
+
+Authors: _Amalie & Baloo_

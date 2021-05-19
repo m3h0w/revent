@@ -40,3 +40,5 @@ The participants are always responsible for giving their own consent, changing t
 ## Documentation
 
 Reconnect should be a free space for anyone. Stay in the moment as much as possible, experiencing the moment in the now rather than being there in order to document it for later. Making sure no pictures are taken without consent, will open up our minds to be free to act out our inner, impulsive, experimental and desired self.
+
+Authors: _Rikke & Martin_

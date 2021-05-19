@@ -47,7 +47,7 @@ const data = [
 ];
 
 const masonryOptions = {
-  transitionDuration: 0,
+  transitionDuration: 100,
 };
 
 const Gallery = () => {
