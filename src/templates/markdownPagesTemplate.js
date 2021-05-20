@@ -67,6 +67,7 @@ const styles = {
   },
   title: {
     textAlign: 'center',
+    marginBottom: '20px',
   },
   titleContainer: {
     marginTop: '10px',

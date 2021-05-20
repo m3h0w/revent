@@ -5,7 +5,7 @@ order: 0
 featuredImgUrl: 'https://images.unsplash.com/photo-1581084081932-4460748ffe0c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
 ---
 
-Since REvent is built around Relations and creating a space for exploring the relations to yourself and others, minding the consent is crucial in forming that space. Consent is essential in both physical and emotional meetings. At REconnect we have introduced a consent-council that both hosts workshops during the festival and to whom you can turn for guidance, advice and support if needed.
+Since [RE]vent is built around Relations and creating a space for exploring the relations to yourself and others, minding the consent is crucial in forming that space. Consent is essential in both physical and emotional meetings. At REconnect we have introduced a consent-council that both hosts workshops during the festival and to whom you can turn for guidance, advice and support if needed.
 
 <!-- You can contact the consent-council HERE -->
 

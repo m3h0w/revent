@@ -9,7 +9,7 @@ featuredImgUrl: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ix
 
 ### Food and kitchens
 
-At REvent we provide two big cooling trailers, where members can store their food throughout the event. However, cooking equipment and dishwashing stations have to be organized by members themselves. We encourage you to create families of 10-20 people and rent/organize your equipment and share the cooking responsibility.
+At [RE]vent we provide two big cooling trailers, where members can store their food throughout the event. However, cooking equipment and dishwashing stations have to be organized by members themselves. We encourage you to create families of 10-20 people and rent/organize your equipment and share the cooking responsibility.
 
 ### Sauna
 
