@@ -30,12 +30,12 @@ In case the sign-ups exceed the total limit of each round, there will be a lotte
 
 - 5th of May: sign-up for 1st round
 - 15th of May: 1st lottery and invitation to buy a membership & sign-up for 2nd round
-- 25.05: 2nd lottery
-- 1st of June: open sale
+- 26.05: 2nd lottery
+- 3rd of June: open sale
 
 ## Covid and reimbursements
 
-If everything goes well, there is no option to let your membership be reimbursed. If you bought a membership and can’t go, then it is your responsibility to find another person to sell it to. Once you found someone, please get in touch with <a href="https://www.facebook.com/thibault.vondannen/" target="_blank">Thibault</a>.
+If everything goes well, there is no option to let your membership be reimbursed. If you bought a membership and can’t go, then it is your responsibility to find another person to sell it to. Once you found someone, please get in touch with Thibault via our contact email: **reventburn@gmail.com**.
 
 In the unfortunate event that we have to cancel [re]vent because of corona, we will reimburse the memberships, but we will not be able to reimburse the full amount. Even before the event we will have to put down expenses that we will not be able to cancel. How much of the original fee we will be able to reimburse is hard to tell at this point.
 

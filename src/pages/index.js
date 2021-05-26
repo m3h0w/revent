@@ -11,6 +11,7 @@ import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
 import Crowdfunding from 'sections/crowdfunding';
+// import LastGallery from 'sections/lastgallery';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function IndexPage() {
@@ -19,6 +20,7 @@ export default function IndexPage() {
       <Layout>
         <SEO title="Revent" />
         <Banner />
+        {/* <LastGallery /> */}
         <Principles />
         {/* <Clients /> */}
         <Land />

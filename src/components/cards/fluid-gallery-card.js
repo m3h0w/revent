@@ -1,16 +1,17 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Image } from 'theme-ui';
+import Img from 'gatsby-image';
 
-const GalleryCard = ({ item }) => {
+const FluidGalleryCard = ({ fluid, title }) => {
   return (
     <Flex as="figure" sx={styles.figure}>
-      <Image loading="lazy" src={item?.image} alt={item?.title} />
-      {item?.title ? <Box as="figcaption">{item.title}</Box> : null}
+      <Img fluid={fluid} />
+      {/* <Box as="figcaption">{title}</Box> */}
     </Flex>
   );
 };
 
-export default GalleryCard;
+export default FluidGalleryCard;
 
 const styles = {
   figure: {

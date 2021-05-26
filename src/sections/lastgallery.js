@@ -11,111 +11,50 @@ import gallery3 from 'assets/images/gallery/3.jpg';
 import gallery4 from 'assets/images/gallery/4.jpg';
 import gallery5 from 'assets/images/gallery/5.jpg';
 import gallery6 from 'assets/images/gallery/6.jpg';
-
-import gallery21 from 'assets/images/lastgallery/1.jpg';
-import gallery22 from 'assets/images/lastgallery/2.jpg';
-import gallery23 from 'assets/images/lastgallery/3.jpg';
-import gallery24 from 'assets/images/lastgallery/4.jpg';
-import gallery25 from 'assets/images/lastgallery/5.jpg';
-import gallery26 from 'assets/images/lastgallery/6.jpg';
-import gallery27 from 'assets/images/lastgallery/7.jpg';
-
 import { navigate } from 'gatsby-link';
-
-const data = [
-  {
-    id: 1,
-    image: gallery1,
-    title: 'Pink flowers',
-  },
-  {
-    id: 2,
-    image: gallery2,
-    title: 'Green umbrella ',
-  },
-  {
-    id: 3,
-    image: gallery3,
-    title: 'Sunny grass',
-  },
-  {
-    id: 4,
-    image: gallery4,
-    title: 'No filter',
-  },
-  {
-    id: 6,
-    image: gallery6,
-    title: 'Puffy clouds',
-  },
-  {
-    id: 5,
-    image: gallery5,
-    title: 'Wooden planks',
-  },
-];
-
-const data2 = [
-  {
-    id: 1,
-    image: gallery21,
-  },
-  {
-    id: 2,
-    image: gallery22,
-  },
-  {
-    id: 3,
-    image: gallery23,
-  },
-  {
-    id: 4,
-    image: gallery24,
-  },
-  {
-    id: 6,
-    image: gallery26,
-  },
-  {
-    id: 5,
-    image: gallery25,
-  },
-  {
-    id: 7,
-    image: gallery27,
-  },
-];
+import { graphql, useStaticQuery } from 'gatsby';
 
 const masonryOptions = {
   transitionDuration: 100,
 };
 
-const Gallery = () => {
+const LastGallery = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { extension: { regex: "/(jpg)|(jpeg)|(png)/" }, dir: { regex: "/lastgallery/" } }) {
+        edges {
+          node {
+            id
+            thumbnail: childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+            src: childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+  const imageData = data.allFile.edges;
+
   return (
     <Box id="gallery" as="section" sx={styles.section}>
       <Container sx={styles.container}>
-        <SectionHeading
-          sx={styles.heading}
-          slogan="Some beautiful portraits from last year..."
-          title="[RE]vent 2020"
-        />
+        <SectionHeading sx={styles.heading} slogan="Some pictures from the location" title="Tysmosen" />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
-          {data2?.map((item) => (
+          {imageData?.map((item) => (
             <GalleryCard key={item.id} item={item} />
           ))}
         </Box>
+        <Button variant="muted" sx={styles.button} onClick={() => navigate('/memberships')}>
+          Sign me up! <RiArrowRightSLine size="20px" />
+        </Button>
       </Container>
-      <Container sx={styles.container}>
-        <SectionHeading sx={styles.heading} slogan="...and from the location" title="Tysmosen" />
-        <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
-          {data?.map((item) => (
-            <GalleryCard key={item.id} item={item} />
-          ))}
-        </Box>
-      </Container>
-      <Button variant="muted" sx={styles.button} onClick={() => navigate('/memberships')}>
-        Sign me up! <RiArrowRightSLine size="20px" />
-      </Button>
       <div sx={styles.customShapeDividerTop}>
         <svg
           data-name="Layer 1"
@@ -143,7 +82,7 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default LastGallery;
 
 const styles = {
   section: {

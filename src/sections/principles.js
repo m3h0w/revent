@@ -215,6 +215,8 @@ const styles = {
     },
   },
   contentWrapper: {
+    paddingTop: '50px',
+    paddingBottom: '70px',
     fontSize: [18, null, null, 22, 24, 26, 30],
     color: '#fff',
     display: 'flex',

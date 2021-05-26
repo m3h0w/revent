@@ -39,9 +39,9 @@ export default function Footer() {
         <Flex sx={styles.content}>
           <Flex sx={styles.copyright}>
             {/* <Logo white /> */}
-            {/* <Text as="span" sx={styles.logoName}>
-              Contact
-            </Text> */}
+            <Text as="span" sx={styles.logoName}>
+              Contact: reventburn@gmail.com
+            </Text>
           </Flex>
 
           <Flex as="ul" sx={styles.nav}>

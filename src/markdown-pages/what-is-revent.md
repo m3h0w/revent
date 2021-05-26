@@ -97,6 +97,8 @@ We communicate and organize through a few different channels which you’re welc
 3. [Slack](https://l.facebook.com/l.php?u=https%3A%2F%2Fjoin.slack.com%2Ft%2Fthe-reconnect%2Fshared_invite%2Fzt-p9xsyssj-dWAHe5KmiiF6KWgyWpBT9w%3Ffbclid%3DIwAR0d4MOfNTpWBdwcf2BMDTBvAWsKPVRYP19-t3Wut1iampCD5HZRP-4chxM&h=AT1gORAoSZfYxnC4vzV0UGQlEthKO6aJ6EiOvZp8pSHyIHq32zf25R9tI-Yr8vpBoKvntTFQYp0nRNyRVJEMsjdE_-aKAjXkBiZy7b1soIbHkrqXXW89wQWt1a_9Fx7ueQ&__tn__=-UK-R&c[0]=AT2LRILGNGbYhcx_bzl9LfShfjzeD5g5Hda49yRBiC4u3gWyMN2zd_viz1B_KdSgoTNktmreSQ_Tj99zWA5EEKgC6o-gBparAjIqkAvZoZDJw25JXFAqcDoZKNRnEEoOmipIh7ZdmzPFaXKa1mFt47_DOgL9297114M) where you can participate in the organizational topics.
 4. [Our website](https://revent.lighthousecph.dk/) where you can find general info.
 
+And if you have some questions not covered by the website, message us at: **reventburn@gmail.com**.
+
 ---
 
 Authors: _Michaela & Piotr_
