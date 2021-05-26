@@ -106,7 +106,7 @@ const Gallery = () => {
         </Box>
       </Container>
       <Container sx={styles.container}>
-        <SectionHeading sx={styles.heading} slogan="...and from the location" title="Tysmosen" />
+        <SectionHeading sx={styles.heading} slogan="...and pictures from the location" title="Tysmosen" />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {data?.map((item) => (
             <GalleryCard key={item.id} item={item} />
