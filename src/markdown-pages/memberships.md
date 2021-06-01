@@ -41,7 +41,7 @@ In the unfortunate event that we have to cancel [re]vent because of corona, we w
 
 ## COVID-19
 
-We will follow governmental regulations with regards to COVID-19 precautions. Expect more information in early July. Either way, however, we recommend all non-vaccinated participants to test themselves.
+We will follow governmental regulations with regards to COVID-19 precautions. Expect more information in early July. Either way, however, we recommend all non-vaccinated participants to test themselves shortly before coming.
 
 ---
 
