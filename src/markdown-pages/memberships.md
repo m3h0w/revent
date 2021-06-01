@@ -33,11 +33,15 @@ In case the sign-ups exceed the total limit of each round, there will be a lotte
 - 26.05: 2nd lottery
 - 3rd of June: open sale
 
-## Covid and reimbursements
+## Reimbursements
 
 If everything goes well, there is no option to let your membership be reimbursed. If you bought a membership and can’t go, then it is your responsibility to find another person to sell it to. Once you found someone, please get in touch with Thibault via our contact email: **reventburn@gmail.com**.
 
 In the unfortunate event that we have to cancel [re]vent because of corona, we will reimburse the memberships, but we will not be able to reimburse the full amount. Even before the event we will have to put down expenses that we will not be able to cancel. How much of the original fee we will be able to reimburse is hard to tell at this point.
+
+## COVID-19
+
+We will follow governmental regulations with regards to COVID-19 precautions. Expect more information in early July. Either way, however, we recommend all non-vaccinated participants to test themselves.
 
 ---
 
