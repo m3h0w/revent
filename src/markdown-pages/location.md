@@ -52,4 +52,4 @@ Only dogs are allowed and they have to be on a leash at all times. They are not 
 
 ---
 
-Authors: _Amalie, Baloo & Piotr_
+Authors: _Amalie & Baloo_
