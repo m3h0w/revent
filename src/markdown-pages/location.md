@@ -9,7 +9,7 @@ featuredImgUrl: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ix
 
 ### Food and kitchens
 
-At [RE]vent we provide two big cooling trailers, where members can store their food throughout the event. However, cooking equipment and dishwashing stations have to be organized by members themselves. We encourage you to create families of 10-20 people and rent/organize your equipment and share the cooking responsibility.
+At [RE]vent we provide two big cooling trailers, where members can store their food throughout the event. However, cooking equipment and dishwashing stations have to be organized by members themselves. We encourage you to create [families](https://revent.lighthousecph.dk/families) of 10-20 people and rent/organize your equipment and share the cooking responsibility. Please be aware that there is no electricity available for cooking equipment, so best if you bring gas stoves.
 
 ### Sauna
 
@@ -21,8 +21,7 @@ The sauna next to the pool has to be turned on by paying 20 kr. to a machine. We
 
 ### Showers and Toilets
 
-At Tysmosen we have the luxury of both indoor and outdoor shower facilities. In addition to the indoor toilet facilities, there will be a toilet van, facilitating your physical relief.
-We are currently looking for extra toilets to rent.
+At Tysmosen, we have the luxury of both indoor and outdoor shower facilities. However, hot water will be limited, so expect to take cold showers at rush hours. In addition to the indoor toilet facilities, there will be 2-3 rented outdoor toilets by the check-in area.
 
 ### Pool
 
@@ -47,6 +46,10 @@ Part of Tysmosen is a protected area and the animals are not used to loud speake
 
 Tysmosen is a nudist camping site on a regular basis, so there might be some raw human bodies both among our hosts and among ourselves.
 
+### Pets
+
+Only dogs are allowed and they have to be on a leash at all times. They are not allowed inside of the cafe, check-in area, toilets, baths, saunas, and nearby the pool.
+
 ---
 
-Authors: _Amalie & Baloo_
+Authors: _Amalie, Baloo & Piotr_
