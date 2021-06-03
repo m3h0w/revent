@@ -13,10 +13,29 @@ import Subscription from 'sections/subscription';
 import Crowdfunding from 'sections/crowdfunding';
 // import LastGallery from 'sections/lastgallery';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import InfoOnce from 'components/infoonce';
+
+const MembershipsInfo = () => {
+  return (
+    <>
+      The open sale of the remaining memberships for the [re]vent is now online! Simply follow the link below to
+      access the shop.
+      <a href="https://memberships.theborderland.se/revent/2021/" target="_blank" rel="noreferrer">
+        <h3 style={{ textAlign: 'center' }}>
+          {'>>'} Open Sale {'<<'}{' '}
+        </h3>
+      </a>
+      <div style={{ textAlign: 'center' }}>🎉🎉🎉</div>
+    </>
+  );
+};
 
 export default function IndexPage() {
   return (
     <ParallaxProvider>
+      <InfoOnce id={0}>
+        <MembershipsInfo />
+      </InfoOnce>
       <Layout>
         <SEO title="Revent" />
         <Banner />

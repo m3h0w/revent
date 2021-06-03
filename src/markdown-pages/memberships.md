@@ -5,6 +5,14 @@ order: 4
 featuredImgUrl: 'https://images.unsplash.com/photo-1505147704403-c2caf85db293?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1948&q=80'
 ---
 
+---
+
+<p style="text-align: center;"> Open sale of the remaining memberships for the [re]vent is now online!</p>
+
+<a href="https://memberships.theborderland.se/revent/2021/" target="_blank" rel="noreferrer"><h3 style="text-align: center;"> --= Open Sale =-- </h3></a>
+
+---
+
 ## Why memberships and not tickets?
 
 A burn is not a festival — it is a co-created event in which all participants are invited to bring their own gifts and skills to build a magical place together. That’s why we don’t sell tickets but memberships: they grant you access to [re]vent and also invite you to co-create it. At the same time memberships are the financial backbone of the burn — all income will flow into renting
