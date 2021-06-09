@@ -7,9 +7,9 @@ featuredImgUrl: 'https://images.unsplash.com/photo-1505147704403-c2caf85db293?ix
 
 ---
 
-<p style="text-align: center;"> Open sale of the remaining memberships for the [re]vent is now online!</p>
+<p style="text-align: center;"> [RE]vent is sold out now! :( Check the below FB group for transfers:</p>
 
-<a href="https://memberships.theborderland.se/revent/2021/" target="_blank" rel="noreferrer"><h3 style="text-align: center;"> --= Open Sale =-- </h3></a>
+<a href="https://www.facebook.com/groups/840400883237015" target="_blank" rel="noreferrer"><h3 style="text-align: center;"> --= Membership Transfers =-- </h3></a>
 
 ---
 
@@ -31,8 +31,6 @@ We will have a minimum amount of low-income memberships that will be allocated t
 Since we decided that we wanted the [re]vent to help in the growth of the [re]connect community that stands behind it, we will start handing out memberships first to people who have been part of the community. They also have the option of inviting 1 other friend who has not been part of [re]connect so far. While we reserve 80 spots for [re]connecters initially, there will only be 40 spots available for a +1 friend. This is to make sure that we have at least 80 spots reserved to welcome new people to the event and the community.
 
 In case the sign-ups exceed the total limit of each round, there will be a lottery for each round. People who have signed-up in the first round but not received a membership, will automatically take part in the membership lottery for the second round. In case not all memberships are sold after the second round, all memberships can be bought on a first come first serve basis.
-
-<a href="https://tinyurl.com/4wya2zwt" target="_blank"><h3 style="text-align: center;">In order to sign-up please fill out this form</h3></a>
 
 ## Timeline
 
