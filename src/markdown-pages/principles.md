@@ -9,9 +9,8 @@ featuredImgUrl: 'https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ix
 
 One of our principles at [Re]vent is consent:
 
-<div class="border: 2px solid #990066">
-Our community values expanding our comfort zones and we often enjoy pushing each other's boundaries. Our courage, openness and sense of freedom rests on a foundation of trust in our boundaries being respected, and that no-one will push beyond what we have consented to. In this way we can fearlessly push the limits. So we ask each other for consent and to avoid ambiguity.
-</div>
+| Our community values expanding our comfort zones and we often enjoy pushing each other's boundaries. Our courage, openness and sense of freedom rests on a foundation of trust in our boundaries being respected, and that no-one will push beyond what we have consented to. In this way we can fearlessly push the limits. So we ask each other for consent and to avoid ambiguity. |
+---
 
 ## Procedures
 
