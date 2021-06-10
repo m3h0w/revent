@@ -18,14 +18,11 @@ import InfoOnce from 'components/infoonce';
 const MembershipsInfo = () => {
   return (
     <>
-      The open sale of the remaining memberships for the [re]vent is now online! Simply follow the link below to
-      access the shop.
-      <a href="https://memberships.theborderland.se/revent/2021/" target="_blank" rel="noreferrer">
-        <h3 style={{ textAlign: 'center' }}>
-          {'>>'} Open Sale {'<<'}{' '}
-        </h3>
+      <p style="text-align: center;"> [RE]vent is sold out now! :( Check the below FB group for transfers:</p>
+
+      <a href="https://www.facebook.com/groups/840400883237015" target="_blank" rel="noreferrer">
+        <h3 style="text-align: center;"> --= Membership Transfers =-- </h3>
       </a>
-      <div style={{ textAlign: 'center' }}>🎉🎉🎉</div>
     </>
   );
 };
@@ -33,7 +30,7 @@ const MembershipsInfo = () => {
 export default function IndexPage() {
   return (
     <ParallaxProvider>
-      <InfoOnce id={0}>
+      <InfoOnce id={1}>
         <MembershipsInfo />
       </InfoOnce>
       <Layout>
