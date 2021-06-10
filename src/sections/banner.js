@@ -81,7 +81,7 @@ const BannerContent = () => {
   return (
     <Box sx={styles.bannerContent({ clickable: !displayInformation })} onClick={() => setDisplayInformation(true)}>
       <Heading as="h4" sx={styles.dateDescription}>
-        [re]vent | 19-25 July 2021, Copenhagen
+        [RE]vent | 19-25 July 2021, Copenhagen
       </Heading>
       {mainContent}
     </Box>

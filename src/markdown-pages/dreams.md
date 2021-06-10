@@ -9,7 +9,7 @@ _Dreaming_ is a central part of a burn; a burn starts in someone’s dream and i
 
 Dreaming is a process that once it is started and shared with others inspires for more and more dreaming and gains more momentum. Dreams can be about building or creating a space at the location, holding an event, shaping the collective culture through proposing small acts and many more things.
 
-### Yes indeed, we encourage you to share anything you dream of happening at [re]vent!
+### Yes indeed, we encourage you to share anything you dream of happening at [RE]vent!
 
 A digital **Dreams Platform** forms the space where we can share our wildest dreams - and search for whatever it is you need to fulfill this dream. Here we can search for co-dreamers, ask for this one unique thingy that you need for your dream that someone might happen to have in their basement, or apply for a share of the dream grant of 30.000 DKK to cover material costs you have to purchase. Perhaps someone had a similar dream or simply wants to join forces with you to co-create this dream, wouldn’t that be wonderful? Finally, here we can also get all excited by looking through what dreams are brewing and show them our excitement by making sure they get the co-dreamers, thingies and funds they need to come alive!
 

@@ -123,11 +123,11 @@ export default function Principles() {
           {/* <Box sx={styles.featureWrapper}> */}A burn is not a festival — it is a co-created event in which all
           participants are invited to bring their own gifts and skills to build a magical place together.
           <hr></hr>
-          That’s why we don’t sell tickets but memberships: they grant you access to [re]vent and also invite you
+          That’s why we don’t sell tickets but memberships: they grant you access to [RE]vent and also invite you
           to co-create it.
           <hr></hr>
           At the same time memberships are the financial backbone of the burn — all income will flow into renting
-          the space and equipment, funding dreams, and anything else we need for [re]vent.
+          the space and equipment, funding dreams, and anything else we need for [RE]vent.
           {/* {data?.feature?.map((feature, i) => (
               <Feature
                 key={i}
