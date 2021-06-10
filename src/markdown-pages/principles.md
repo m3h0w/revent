@@ -4,14 +4,21 @@ title: 'Principles'
 order: -1
 featuredImgUrl: 'https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80'
 ---
-
+<style>
+.boxBorder {
+     border: 2px solid #990066;
+     padding: 10px;
+     outline: #990066 solid 5px;
+     outline-offset: 5px;
+   }  
+</style>
 ## Consent
 
 One of our principles at [Re]vent is consent:
 
-<p style="border: 1px solid #ccc">
+<div class="boxBorder">
 Our community values expanding our comfort zones and we often enjoy pushing each other's boundaries. Our courage, openness and sense of freedom rests on a foundation of trust in our boundaries being respected, and that no-one will push beyond what we have consented to. In this way we can fearlessly push the limits. So we ask each other for consent and to avoid ambiguity.
-</p>
+</div>
 
 ## Procedures
 
