@@ -5,42 +5,46 @@ order: 0
 featuredImgUrl: 'https://images.unsplash.com/photo-1581084081932-4460748ffe0c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
 ---
 
-Since [RE]vent is built around Relations and creating a space for exploring the relations to yourself and others, minding the consent is crucial in forming that space. Consent is essential in both physical and emotional meetings. At REconnect we have introduced a consent-council that both hosts workshops during the festival and to whom you can turn for guidance, advice and support if needed.
+# Consent
 
-<!-- You can contact the consent-council HERE -->
+One of our principles at [Re]vent is consent:
 
-## Asking for consent
+> **Consent**
+> Our community values expanding our comfort zones and we often enjoy pushing each other’s boundaries. Our courage, openness and sense of freedom rests on a foundation of trust in our boundaries being respected, and that no-one will push beyond what we have consented to. In this way we can fearlessly push the limits. So we ask each other for consent and to avoid ambiguity.
 
-Asking for consent is key. So how do you do that? Requests and invitations will be your best friends here
-“Can I hug you” “would you like a hug”
 
-## Make your consent clear to others
+## Procedures
+Last year we had two issues where our procedures were found lacking and we are spending a lot of effort this year to avoid any such situation arising again.
 
-Staying in touch with your YES and NO is important. When you are sure about your own consent, don’t assume other people can read your mind, but express your position, intention or need clearly.
+As a response to last year, we formed an initiative and joined with other members of the burning community to form an institution that can help us deal with consent issues and conflicts: the Lighthouse Conflict and Consent Council.
+Through that we are training some members in Restorative Justice processes, and we are looking to establish best practices for how to be ready for difficult situations at a burn. Of course we are also working with prevention and with creating a culture where checking for consent is as natural as saying hello. To this effect we are preparing workshops to be held at the event, and elements for the opening ceremony.
 
-## Changing your consent
+We are still working on the exact form, but what we have in place is that we will always have a responsible person on shift, called the Consent Responder, that is ready to respond to any emotionally risky or conflictual situation and take care of affected parties. We are currently looking into the exact nature of what training they will get. 
 
-Consent can be changed at any time. If you feel that your YES is turning into a NO, then say “I have changed my mind and I will not participate anymore”.
-If you feel that your NO is turning into a YES then say “I have changed my mind and I would love to participate”.
+On site will also be another person on shift, called the Helm, that has the acting responsibility for the event. This person has the authority to evict a person from the premises should they be considered a threat to the safety of other participants. 
 
-## Asking about consent
+In the event of an issue arising, we will initiate a Restorative Justice process, that may be run at or after the event depending on the specifics of the issue. Nobody will or can be forced to participate in such a process, and it is in no way meant to replace a legal process if the issue is severe enough for that. A victim will always get our support to go to the authorities.
+We hope that we can heal most wounds between people in this framework, or at the very least help our community members grow into even more mature and beautiful people.
 
-Ask explicitly about consent. Asking is key to creating a consent-based space. Asking for consent is inclusion. Someone who might have been unsure if they were allowed to participate, gets a clear signal that they are invited. Someone who might have been unsure if they really wanted to participate, gets a clear signal that they should take responsibility for their own actions.
+Read more about the consent council at [https://fb.me/LCCCouncil](https://fb.me/LCCCouncil).
 
-## When you get an answer
+## Avoiding difficult situations
 
-If you ask for consent and get a YES, you can answer with a “Thank you”. If you ask for consent and get a NO, also answer with a “Thank you”. In any case, show appreciation of the other person connecting with their YES or NO.
+To avoid ending up in a situation where a process is needed, you can participate in one of the workshops on sensing and setting boundaries. It is everybody’s responsibility to help us uphold a culture of consent and safety, and this involves learning to sense other people’s boundaries when they are failing to clearly show them, as well as learning to clearly show and respect your own body’s boundaries. 
 
-If you’re ever in doubt if there is consent from all participants, you should assume there isn’t. If you ask, and can’t get a clear answer, you should assume there isn’t.
+When you are the least bit unsure of whether the person you are with is participating in something against their will, slow down and check properly. Allow them space to say no. If you are reluctant to ask because you are afraid to be rejected, remember that if they want to be with you they will not reject you, and if they don’t want to be with you and you proceed, you are committing a form of abuse. 
+If you are rejected, thank them for being clear about their boundaries. You were just spared from becoming a perpetrator, something really uncomfortable.
 
-## Taking your responsibility
+If you are with somebody and you are the least bit unsure of whether you want to do what you are doing or about to do, slow down and ask for the space to feel into the situation. If you direct your attention to your body, you know whether you want to or not. You don’t need to know why you want or don’t want something; you never need a justification, your will is sovereign. Practise being in connection with this knowing, and practise trusting it. It will grow stronger. 
 
-The participants are always responsible for giving their own consent, changing their own consent and asking others for consent. Whenever consent is unclear, everyone involved has the same responsibility to make consent clear and outspoken. When consent becomes unclear, you have the responsibility to pause your participation and communicate that you feel consent is unclear, no matter if you feel it is unclear within yourself or in others.
+Remember that you can change your mind at any time without owing anyone an explanation. If you no longer want to, that's reason enough to stop.
 
-## Documentation
+## Relational jujutsu
 
-Reconnect should be a free space for anyone. Stay in the moment as much as possible, experiencing the moment in the now rather than being there in order to document it for later. Making sure no pictures are taken without consent, will open up our minds to be free to act out our inner, impulsive, experimental and desired self.
+To make it easier to say no, you can practise redirecting the flow instead of saying a harsh no, if you want to. That generally makes it much easier for a person to receive a no, as you can reject a proposition without rejecting the person. Try something like “I’m enjoying being here with you, and I don’t want to do that with you now”, or “I’ve been having a good time with you and now I feel a need to go hang out with my friends for a while. I would like to check in with you later”. Notice the use of “and” instead of “but”. The “but” negates the sentence before it and puts all the focus on the rejection. The “and” allows both the acceptance of the person and the rejection of the specific thing at the same time. 
+Try a workshop in boundary setting, embodying that your boundaries are ok and worth listening to is the most important factor, and that can take some time to learn.
+
 
 ---
 
-Authors: _Rikke & Martin_
+Authors: _Rikke & Martin & Einar_
