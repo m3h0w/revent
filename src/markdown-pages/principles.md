@@ -7,7 +7,7 @@ featuredImgUrl: 'https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ix
 
 ---
 
-# Me
+# First sphere: I
 
 ## Radical (emotional) self-reliance
 
@@ -23,7 +23,7 @@ Immediate experience is that which isn’t mediated by words or symbols: it is t
 
 ---
 
-# We
+# Second sphere: We
 
 ## Authentic Relating 
 
@@ -39,7 +39,7 @@ Our community values expanding our comfort zones and we often enjoy pushing each
 
 ---
 
-# US
+# Third sphere: Us
 
 ## Community-building
 
