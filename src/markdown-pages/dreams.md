@@ -5,7 +5,7 @@ order: 2
 featuredImgUrl: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1971&q=80'
 ---
 
-_Dreaming_ is a central part of a burn; a burn starts in someone’s dream and is collectively created when the crazy ones with big aspirations, the foresighted who make dreams, the small sparks come together and meet realities and us all.
+_Dreaming_ is a central part of a burn; a burn starts in someone’s dream and is collectively created when the crazy ones with big aspirations meet the foresighted ones who know who to realize the dreams, so that the sparks come out and meet the reality and all of us.
 
 Dreaming is a process that once it is started and shared with others inspires for more and more dreaming and gains more momentum. Dreams can be about building or creating a space at the location, holding an event, shaping the collective culture through proposing small acts and many more things.
 
