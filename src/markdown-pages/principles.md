@@ -9,7 +9,7 @@ featuredImgUrl: 'https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ix
 
 # First sphere: I
 
-## Radical (emotional) self-reliance
+## Emotional Ownership
 
 _Trusting and owning our experience when engaging with the community._
 
