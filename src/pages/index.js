@@ -18,10 +18,10 @@ import InfoOnce from 'components/infoonce';
 const MembershipsInfo = () => {
   return (
     <>
-      <p style="text-align: center;"> [RE]vent is sold out now! :( Check the below FB group for transfers:</p>
+      <p style={{ textAlign: 'center' }}> [RE]vent is sold out now! :( Check the below FB group for transfers:</p>
 
       <a href="https://www.facebook.com/groups/840400883237015" target="_blank" rel="noreferrer">
-        <h3 style="text-align: center;"> --= Membership Transfers =-- </h3>
+        <h3 style={{ textAlign: 'center' }}> --= Membership Transfers =-- </h3>
       </a>
     </>
   );
