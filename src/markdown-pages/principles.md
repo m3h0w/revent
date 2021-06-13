@@ -73,4 +73,4 @@ We come together in cooperation and play, not in commerce. We are devoted to act
 
 ---
 
-Authors: Viola, Einar, Amalie, and Piotr
+*Authors: Viola, Einar, Amalie, and Piotr*
