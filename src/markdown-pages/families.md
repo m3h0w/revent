@@ -15,7 +15,7 @@ In addition to the practicalities, families can become a vehicle for creating a 
 
 The [RE]vent’s placement lead will facilitate physical placement of families at the location, depending on the size and wishes of respective families.
 
-<a href="https://docs.google.com/spreadsheets/d/1dX5Phs0cxPTZ6bkvRYWoK8As-rbv_2I3ag1Df-CGk0w" target="_blank"><h3 style="text-align: center;">Register your family or connect to one of the established families here.</h3></a>
+Register your family or connect to one of the established families in the master spreadsheet (you have a link to it in the infomail and in the FB group for members).
 
 ---
 
